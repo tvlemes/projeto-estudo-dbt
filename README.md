@@ -79,7 +79,7 @@ Os seguintes arquivos CSV estão localizados em `data/` e são utilizados como f
 
 ## 🧾 Documentação
 
-Veja a apostila em `Apostila/Tutorial DBT - EM DESENVOLVIMENTO.docx` para mais detalhes sobre o funcionamento e boas práticas no uso do dbt.
+Veja a apostila em `apostila/Tutorial DBT.pdf` para mais detalhes sobre o funcionamento e boas práticas no uso do dbt.
 
 
 > Projeto criado com fins educacionais para estudo de engenharia de dados e modelagem com dbt.
