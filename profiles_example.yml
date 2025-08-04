@@ -1,0 +1,12 @@
+dbt_etl_test:
+  target: dev
+  outputs:
+    dev:
+      type: postgres
+      host: nome_host
+      user: nome_usuario
+      password: nome_senha
+      dbname: nome_banco_dados
+      schema: public
+      threads: 1
+      port: 5432

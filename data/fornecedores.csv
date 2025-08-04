@@ -1,0 +1,101 @@
+fornecedor_id,empresa,telefone,cidade,estado
+1,Araújo,0300-749-9309,da Cunha de Souza,RS
+2,da Conceição,+55 51 0913 0756,Oliveira,RR
+3,Oliveira Santos - EI,(071) 0283-8578,Lopes da Serra,PB
+4,Viana,11 4973 3484,Jesus,SP
+5,da Rocha,(084) 5758-4419,Novaes da Praia,SP
+6,Gonçalves Barbosa Ltda.,+55 21 5747 3384,Cunha do Campo,RN
+7,Farias Barros e Filhos,51 3301 6571,Almeida,PI
+8,Oliveira Ribeiro - ME,+55 (081) 4540-1938,da Luz,PA
+9,Azevedo Novaes - ME,+55 (061) 4004-9915,Ramos da Prata,PE
+10,Cunha,21 7431-5274,Alves,SC
+11,Gonçalves,0300 329 6685,Nunes,RO
+12,da Mata S.A.,(081) 5304-6374,Jesus Verde,SC
+13,Ferreira e Filhos,21 3017 4268,Costa da Mata,MS
+14,das Neves Cunha - ME,+55 (021) 7956-8783,Cardoso,PE
+15,Souza,21 1910 8839,da Cunha,MT
+16,Correia,+55 (084) 9718-7072,Ramos Verde,AL
+17,Lima,+55 (031) 6403 9106,Campos da Prata,AL
+18,Ribeiro S/A,(011) 6226 5676,Cardoso da Prata,BA
+19,Costa,+55 (051) 8682-3004,Viana de Pereira,PI
+20,Dias,+55 51 7524 3106,Duarte,DF
+21,Castro - EI,+55 (051) 7903 0673,Caldeira,BA
+22,Dias,0500 599 5342,Oliveira,MA
+23,Caldeira,84 9268-7056,Peixoto das Pedras,BA
+24,Nascimento,+55 (061) 8733-4270,Peixoto da Prata,PE
+25,Nogueira Farias Ltda.,+55 (084) 5175-1830,Nascimento do Norte,AP
+26,da Rosa Rocha S.A.,(071) 4033 1739,Novaes,ES
+27,Gomes,41 7854 4587,Castro de Ribeiro,SP
+28,da Rocha,31 5609 3204,Gonçalves Grande,DF
+29,Dias,41 9378 5477,da Cunha de Moraes,CE
+30,Viana Rodrigues S.A.,71 0801-0062,Campos,RR
+31,Alves da Rosa - EI,(051) 5099-7700,Alves do Sul,PE
+32,Teixeira,(011) 0862 1182,da Mota,RN
+33,Moraes,+55 81 6156-7933,Cardoso do Norte,AP
+34,Nascimento,41 8700 2176,Castro do Galho,AL
+35,da Rosa Ribeiro Ltda.,+55 (061) 1489 0250,da Conceição,SP
+36,Cardoso,(031) 2939 6856,Cardoso,PE
+37,Barros,+55 41 6315 9996,Araújo Paulista,SE
+38,Rodrigues,+55 31 5866-2961,Farias de Minas,AP
+39,da Costa,41 2655 1104,Moreira de Fogaça,AM
+40,Carvalho da Mata - ME,(041) 8886-1015,Martins,MG
+41,Gonçalves - ME,51 1839 8262,Fogaça,MA
+42,Sales,+55 (011) 1264-6471,Fernandes de Goiás,SC
+43,da Paz,(051) 1240-6596,Pires Alegre,PA
+44,Jesus Martins - EI,+55 (081) 7526-5479,Martins,MG
+45,Novaes,21 1939 8280,da Rocha de Pires,SE
+46,Campos,81 7243 4266,Porto,RN
+47,Nunes,61 8680-5891,Farias,RO
+48,da Cunha,0800-096-5610,Ferreira,ES
+49,Porto Moura - ME,(061) 9825-0714,Cardoso do Campo,TO
+50,Monteiro Lima Ltda.,(051) 3875-7177,Campos da Mata,AL
+51,Aragão Ltda.,+55 51 2382 8258,Rezende de Goiás,SE
+52,da Mata,+55 (061) 6609-3796,Almeida do Oeste,DF
+53,Campos,0500 182 5537,Ferreira,RO
+54,Souza,(051) 9696 9155,da Luz de Jesus,RN
+55,Cunha Ltda.,+55 71 3412 5286,Cunha Verde,MG
+56,da Mata,(084) 8282-7422,Porto do Norte,MS
+57,Rodrigues S.A.,+55 (071) 6887-6767,da Cunha de Cardoso,RJ
+58,das Neves Ltda.,+55 (051) 4384 2797,Correia,GO
+59,Viana,+55 (061) 7836 1340,Ferreira de Monteiro,TO
+60,Pires S/A,+55 41 3959-6292,da Rocha,SE
+61,Monteiro - EI,+55 84 9825-4494,Cunha,SP
+62,Caldeira,+55 84 2232-5367,Fogaça,RS
+63,Nascimento,(041) 1168-4577,Almeida de Minas,SC
+64,Moraes,+55 (084) 8636 3745,Mendes da Prata,RJ
+65,Rodrigues Mendes e Filhos,+55 (071) 0170 1277,Pereira,DF
+66,Jesus da Cruz Ltda.,+55 31 5415 2064,Pereira,RS
+67,Castro S/A,+55 11 7129-3870,Mendes,TO
+68,Pereira e Filhos,+55 81 7136 1115,Jesus Grande,MG
+69,da Conceição Campos - EI,0300 092 7532,Pires do Oeste,AP
+70,Cunha S/A,0900 656 5234,Farias,PI
+71,Araújo,(031) 3898 3640,Sales,MG
+72,Duarte - ME,0300-180-5526,Moreira da Prata,RO
+73,Ribeiro Cardoso S/A,0900 104 3006,Santos das Pedras,PA
+74,Cardoso,61 8924-1418,da Costa,PI
+75,Novaes,0900 146 3031,Correia dos Dourados,RN
+76,Lima e Filhos,+55 (051) 1020-2758,da Cunha da Praia,BA
+77,Costa,+55 (041) 5648 1491,Ramos de Silva,MS
+78,Sales - EI,+55 (041) 5241-9138,Barbosa,AC
+79,Barbosa Ribeiro Ltda.,51 2208 6353,Lopes Paulista,TO
+80,Moura S/A,21 0238-0617,Lima Alegre,AP
+81,Alves,31 3494 9375,da Paz de Viana,SP
+82,da Costa Almeida - ME,+55 (041) 3850 5064,da Rocha,PE
+83,Peixoto Rodrigues S/A,+55 (011) 4103-8657,Castro,PE
+84,Novaes Cardoso - EI,0300 062 3445,Martins Alegre,PB
+85,Dias,+55 11 3291 2127,Lopes de Oliveira,AM
+86,da Rocha,(041) 4741-1249,da Rosa,TO
+87,da Conceição,+55 31 3568 0442,Nunes,PB
+88,Castro Rezende S/A,+55 84 1003 2365,Ferreira,TO
+89,Aragão S/A,+55 (081) 7215-1070,Pinto,TO
+90,Sales,+55 (041) 6625 3244,da Costa de Azevedo,RN
+91,Gonçalves Sales - ME,81 7014-6263,Viana,SE
+92,Nascimento e Filhos,11 7875 9856,da Mata do Sul,MT
+93,Araújo Freitas S/A,(071) 8593-2133,Teixeira do Norte,SP
+94,Nogueira Moraes S.A.,+55 (051) 3955-9059,da Mota,TO
+95,Viana,(041) 2701 0393,Souza,PR
+96,Melo - EI,+55 (081) 2525-0029,Correia,PE
+97,Cardoso,31 6915 4522,Rodrigues Alegre,CE
+98,das Neves,0900 264 4220,Azevedo da Serra,RN
+99,das Neves,0300 172 5135,da Cunha de Minas,TO
+100,Porto,+55 (021) 4331 5410,Nogueira,PB

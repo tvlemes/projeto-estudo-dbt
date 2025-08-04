@@ -1,0 +1,10 @@
+venv/
+scripts/script_python/
+scripts/models/
+scripts/script_python/
+scripts/dados_ingestão/
+Readme_v01.md
+Readme_v02.md
+profiles.yml
+apostila/Tutorial DBT - EM DESENVOLVIMENTO.docx
+.user.yml

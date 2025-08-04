@@ -1,0 +1,271 @@
+regiao_id,uf,cidade
+1,AC,Araújo
+2,AL,Farias de Goiás
+3,AM,Cavalcanti
+4,AP,Pereira
+5,BA,Araújo
+6,CE,da Rosa
+7,DF,Santos
+8,ES,da Paz
+9,GO,das Neves dos Dourados
+10,MA,Almeida da Serra
+11,MG,Mendes Paulista
+12,MS,da Rosa
+13,MT,Cavalcanti de Minas
+14,PA,Castro da Praia
+15,PB,Ferreira do Norte
+16,PE,Teixeira de Costa
+17,PI,Cardoso da Prata
+18,PR,Moreira Verde
+19,RJ,Campos
+20,RN,Dias
+21,RO,Cardoso de Goiás
+22,RR,Nascimento
+23,RS,Ramos da Praia
+24,SC,Moura
+25,SE,da Rocha Paulista
+26,SP,da Cunha
+27,TO,da Cruz
+28,AC,Nascimento de Fogaça
+29,AL,Martins
+30,AM,Dias
+31,AP,Lopes
+32,BA,Fogaça de Minas
+33,CE,Lopes
+34,DF,Sales
+35,ES,Ramos Grande
+36,GO,Cunha de Goiás
+37,MA,Pereira Verde
+38,MG,Moreira de Goiás
+39,MS,Silva
+40,MT,Carvalho de Barros
+41,PA,da Costa
+42,PB,Pereira
+43,PE,Nogueira
+44,PI,Rezende do Galho
+45,PR,Vieira do Sul
+46,RJ,Teixeira
+47,RN,Mendes do Campo
+48,RO,Pinto da Serra
+49,RR,Almeida de Ferreira
+50,RS,Santos
+51,SC,Jesus
+52,SE,da Costa
+53,SP,da Cruz da Prata
+54,TO,Martins
+55,AC,Aragão de Correia
+56,AL,Lima de Goiás
+57,AM,Duarte
+58,AP,Cardoso
+59,BA,Campos de Teixeira
+60,CE,Costela
+61,DF,Vieira de da Cunha
+62,ES,Souza das Pedras
+63,GO,Viana
+64,MA,Lima
+65,MG,Moura dos Dourados
+66,MS,Costa de Farias
+67,MT,Campos
+68,PA,Aragão Verde
+69,PB,das Neves
+70,PE,Cardoso
+71,PI,Dias
+72,PR,Azevedo
+73,RJ,Cardoso do Galho
+74,RN,Freitas
+75,RO,da Rosa de Viana
+76,RR,Ribeiro
+77,RS,Ribeiro
+78,SC,da Mota do Campo
+79,SE,Pinto
+80,SP,Pereira das Pedras
+81,TO,Barros de Castro
+82,AC,Nunes
+83,AL,Cavalcanti de Goiás
+84,AM,da Mota
+85,AP,Cunha de Pereira
+86,BA,Freitas
+87,CE,Farias de Cardoso
+88,DF,Vieira de Castro
+89,ES,Viana
+90,GO,Carvalho
+91,MA,da Cunha
+92,MG,Rodrigues do Amparo
+93,MS,Nunes
+94,MT,da Cunha
+95,PA,Almeida das Flores
+96,PB,Ramos da Mata
+97,PE,Rodrigues Grande
+98,PI,Gonçalves
+99,PR,Caldeira
+100,RJ,Lopes
+101,RN,Barros
+102,RO,Santos de Souza
+103,RR,Caldeira
+104,RS,da Mata
+105,SC,Campos
+106,SE,Nunes
+107,SP,Farias
+108,TO,Cardoso
+109,AC,Silveira Alegre
+110,AL,da Rocha Alegre
+111,AM,Ferreira
+112,AP,Costela da Mata
+113,BA,Lopes de Cardoso
+114,CE,Ramos
+115,DF,Cardoso
+116,ES,Santos
+117,GO,Costela da Praia
+118,MA,Farias
+119,MG,Gomes da Serra
+120,MS,Viana de Jesus
+121,MT,Vieira
+122,PA,Cavalcanti Grande
+123,PB,Correia do Campo
+124,PE,Fogaça
+125,PI,da Rocha Alegre
+126,PR,Ferreira
+127,RJ,Fernandes de Barros
+128,RN,Pereira
+129,RO,Barbosa do Sul
+130,RR,Costela Paulista
+131,RS,Pires
+132,SC,Alves do Campo
+133,SE,da Costa
+134,SP,Moura
+135,TO,Pinto
+136,AC,Barbosa
+137,AL,Moreira do Norte
+138,AM,da Rocha de Goiás
+139,AP,Moraes
+140,BA,da Costa de Goiás
+141,CE,da Luz
+142,DF,Araújo da Serra
+143,ES,Oliveira de Goiás
+144,GO,da Cruz do Campo
+145,MA,Azevedo do Amparo
+146,MG,da Paz
+147,MS,Monteiro de Lima
+148,MT,das Neves
+149,PA,da Mota
+150,PB,Melo Paulista
+151,PE,Freitas
+152,PI,Silva das Flores
+153,PR,Araújo do Campo
+154,RJ,da Luz Verde
+155,RN,Azevedo do Campo
+156,RO,Monteiro Alegre
+157,RR,Silva do Campo
+158,RS,da Mota Paulista
+159,SC,Pinto
+160,SE,Silveira
+161,SP,Moreira
+162,TO,Campos Alegre
+163,AC,Costa da Mata
+164,AL,Oliveira Alegre
+165,AM,Gonçalves da Prata
+166,AP,da Mota
+167,BA,Nascimento da Serra
+168,CE,Nunes da Prata
+169,DF,Jesus
+170,ES,da Rocha das Pedras
+171,GO,Rezende dos Dourados
+172,MA,da Rosa de Silva
+173,MG,da Cunha de Cardoso
+174,MS,Silva Alegre
+175,MT,Duarte
+176,PA,das Neves do Oeste
+177,PB,Araújo
+178,PE,Farias
+179,PI,Cardoso de Ramos
+180,PR,da Mota das Flores
+181,RJ,Nunes de Farias
+182,RN,Almeida
+183,RO,Pereira
+184,RR,da Luz
+185,RS,Barros de Farias
+186,SC,Ramos
+187,SE,Rezende
+188,SP,Pires do Galho
+189,TO,Vieira dos Dourados
+190,AC,Ribeiro
+191,AL,Ferreira de Farias
+192,AM,Silveira do Amparo
+193,AP,Freitas
+194,BA,Cardoso de Gomes
+195,CE,Fogaça
+196,DF,Lopes da Prata
+197,ES,Cunha
+198,GO,Dias
+199,MA,da Costa do Oeste
+200,MG,Peixoto
+201,MS,Melo da Prata
+202,MT,Peixoto de Caldeira
+203,PA,Peixoto
+204,PB,Aragão Verde
+205,PE,Rocha do Sul
+206,PI,Jesus das Flores
+207,PR,Teixeira da Prata
+208,RJ,Rodrigues
+209,RN,Fogaça
+210,RO,Rodrigues do Sul
+211,RR,Mendes das Flores
+212,RS,Rezende
+213,SC,Teixeira
+214,SE,Novaes
+215,SP,Cardoso
+216,TO,Cunha dos Dourados
+217,AC,Barros
+218,AL,Nascimento Alegre
+219,AM,Ramos
+220,AP,Mendes das Flores
+221,BA,Peixoto Paulista
+222,CE,Ribeiro
+223,DF,Viana
+224,ES,Monteiro
+225,GO,Campos
+226,MA,Araújo
+227,MG,da Paz
+228,MS,da Costa
+229,MT,Costela
+230,PA,Correia de da Rosa
+231,PB,Fernandes de Moura
+232,PE,Correia
+233,PI,Lima
+234,PR,Araújo
+235,RJ,Nascimento das Flores
+236,RN,Cardoso
+237,RO,Cavalcanti
+238,RR,Costa Verde
+239,RS,Monteiro
+240,SC,Moura de Minas
+241,SE,Alves das Pedras
+242,SP,Cavalcanti de Pinto
+243,TO,Ramos Grande
+244,AC,da Luz do Galho
+245,AL,Teixeira do Amparo
+246,AM,Pinto de Fogaça
+247,AP,Farias de Minas
+248,BA,Porto de Goiás
+249,CE,Nascimento de Mendes
+250,DF,Sales
+251,ES,da Mata do Amparo
+252,GO,Moraes
+253,MA,Mendes Paulista
+254,MG,Alves do Galho
+255,MS,Cardoso
+256,MT,Oliveira
+257,PA,Duarte de Ribeiro
+258,PB,Porto de Aragão
+259,PE,Gonçalves
+260,PI,Nunes
+261,PR,Lima
+262,RJ,Ribeiro da Prata
+263,RN,Pereira da Prata
+264,RO,Moraes dos Dourados
+265,RR,Lima Paulista
+266,RS,Costa
+267,SC,Lopes
+268,SE,Teixeira
+269,SP,da Mota
+270,TO,Rocha
