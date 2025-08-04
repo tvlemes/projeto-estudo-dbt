@@ -26856,3 +26856,980 @@ drop table if exists "dbt_test"."public_gold"."gld_fato_vendas__dbt_backup" casc
 [0m21:33:26.867727 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000248F267A000>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000248F2B49160>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000248F2B4B5C0>]}
 [0m21:33:26.867727 [debug] [MainThread]: Flushing usage events
 [0m21:33:27.822418 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m23:06:14.990047 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000122B3D94B00>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000122B0B4B230>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000122B3D94FB0>]}
+
+
+============================== 23:06:14.990047 | 5c08ce8c-5c39-42ee-a0e2-e9db76701494 ==============================
+[0m23:06:14.990047 [info ] [MainThread]: Running with dbt=1.10.6
+[0m23:06:14.990047 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'version_check': 'True', 'fail_fast': 'False', 'log_path': 'C:\\Users\\conta\\OneDrive\\Desktop\\Modelo DBT\\DBT Test\\logs', 'debug': 'False', 'profiles_dir': 'C:\\Users\\conta\\OneDrive\\Desktop\\Modelo DBT\\DBT Test', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'False', 'quiet': 'False', 'no_print': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'static_parser': 'True', 'introspect': 'True', 'invocation_command': 'dbt run', 'target_path': 'None', 'log_format': 'default', 'send_anonymous_usage_stats': 'True'}
+[0m23:06:15.137165 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '5c08ce8c-5c39-42ee-a0e2-e9db76701494', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000122B520D7F0>]}
+[0m23:06:15.186419 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '5c08ce8c-5c39-42ee-a0e2-e9db76701494', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000122B33B7BC0>]}
+[0m23:06:15.188166 [info ] [MainThread]: Registered adapter: postgres=1.9.0
+[0m23:06:15.327384 [debug] [MainThread]: checksum: f6e4baf4de20596ffb9d14e6ef805989eb0e1950dedc3cc83d03f20aa023904c, vars: {}, profile: , target: , version: 1.10.6
+[0m23:06:15.447005 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m23:06:15.447005 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m23:06:15.477271 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '5c08ce8c-5c39-42ee-a0e2-e9db76701494', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000122B54FBCE0>]}
+[0m23:06:15.548776 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\conta\OneDrive\Desktop\Modelo DBT\DBT Test\target\manifest.json
+[0m23:06:15.550776 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\conta\OneDrive\Desktop\Modelo DBT\DBT Test\target\semantic_manifest.json
+[0m23:06:15.589364 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '5c08ce8c-5c39-42ee-a0e2-e9db76701494', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000122B56FA8D0>]}
+[0m23:06:15.589364 [info ] [MainThread]: Found 13 models, 15 data tests, 5 sources, 550 macros
+[0m23:06:15.589364 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '5c08ce8c-5c39-42ee-a0e2-e9db76701494', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000122B54E5730>]}
+[0m23:06:15.589364 [info ] [MainThread]: 
+[0m23:06:15.589364 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+[0m23:06:15.589364 [info ] [MainThread]: 
+[0m23:06:15.589364 [debug] [MainThread]: Acquiring new postgres connection 'master'
+[0m23:06:15.589364 [debug] [ThreadPool]: Acquiring new postgres connection 'list_dbt_test'
+[0m23:06:15.640672 [debug] [ThreadPool]: Using postgres connection "list_dbt_test"
+[0m23:06:15.641206 [debug] [ThreadPool]: On list_dbt_test: /* {"app": "dbt", "dbt_version": "1.10.6", "profile_name": "dbt_etl_test", "target_name": "dev", "connection_name": "list_dbt_test"} */
+
+    select distinct nspname from pg_namespace
+  
+[0m23:06:15.641206 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m23:06:15.787148 [debug] [ThreadPool]: SQL status: SELECT 7 in 0.145 seconds
+[0m23:06:15.789148 [debug] [ThreadPool]: On list_dbt_test: Close
+[0m23:06:15.792150 [debug] [ThreadPool]: Using postgres connection "list_dbt_test"
+[0m23:06:15.793689 [debug] [ThreadPool]: On list_dbt_test: /* {"app": "dbt", "dbt_version": "1.10.6", "profile_name": "dbt_etl_test", "target_name": "dev", "connection_name": "list_dbt_test"} */
+
+    select distinct nspname from pg_namespace
+  
+[0m23:06:15.793689 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m23:06:15.887747 [debug] [ThreadPool]: SQL status: SELECT 7 in 0.094 seconds
+[0m23:06:15.891960 [debug] [ThreadPool]: On list_dbt_test: Close
+[0m23:06:15.894852 [debug] [ThreadPool]: Using postgres connection "list_dbt_test"
+[0m23:06:15.894852 [debug] [ThreadPool]: On list_dbt_test: /* {"app": "dbt", "dbt_version": "1.10.6", "profile_name": "dbt_etl_test", "target_name": "dev", "connection_name": "list_dbt_test"} */
+
+    select distinct nspname from pg_namespace
+  
+[0m23:06:15.895851 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m23:06:16.022541 [debug] [ThreadPool]: SQL status: SELECT 7 in 0.126 seconds
+[0m23:06:16.022541 [debug] [ThreadPool]: On list_dbt_test: Close
+[0m23:06:16.022541 [debug] [ThreadPool]: Using postgres connection "list_dbt_test"
+[0m23:06:16.022541 [debug] [ThreadPool]: On list_dbt_test: /* {"app": "dbt", "dbt_version": "1.10.6", "profile_name": "dbt_etl_test", "target_name": "dev", "connection_name": "list_dbt_test"} */
+
+    select distinct nspname from pg_namespace
+  
+[0m23:06:16.022541 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m23:06:16.097176 [debug] [ThreadPool]: SQL status: SELECT 7 in 0.071 seconds
+[0m23:06:16.098040 [debug] [ThreadPool]: On list_dbt_test: Close
+[0m23:06:16.100247 [debug] [ThreadPool]: Acquiring new postgres connection 'list_dbt_test_public_silver'
+[0m23:06:16.103937 [debug] [ThreadPool]: Using postgres connection "list_dbt_test_public_silver"
+[0m23:06:16.103937 [debug] [ThreadPool]: On list_dbt_test_public_silver: BEGIN
+[0m23:06:16.104938 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m23:06:16.239996 [debug] [ThreadPool]: SQL status: BEGIN in 0.136 seconds
+[0m23:06:16.239996 [debug] [ThreadPool]: Using postgres connection "list_dbt_test_public_silver"
+[0m23:06:16.239996 [debug] [ThreadPool]: On list_dbt_test_public_silver: /* {"app": "dbt", "dbt_version": "1.10.6", "profile_name": "dbt_etl_test", "target_name": "dev", "connection_name": "list_dbt_test_public_silver"} */
+select
+      'dbt_test' as database,
+      tablename as name,
+      schemaname as schema,
+      'table' as type
+    from pg_tables
+    where schemaname ilike 'public_silver'
+    union all
+    select
+      'dbt_test' as database,
+      viewname as name,
+      schemaname as schema,
+      'view' as type
+    from pg_views
+    where schemaname ilike 'public_silver'
+    union all
+    select
+      'dbt_test' as database,
+      matviewname as name,
+      schemaname as schema,
+      'materialized_view' as type
+    from pg_matviews
+    where schemaname ilike 'public_silver'
+  
+[0m23:06:16.246030 [debug] [ThreadPool]: SQL status: SELECT 2 in 0.010 seconds
+[0m23:06:16.255409 [debug] [ThreadPool]: On list_dbt_test_public_silver: ROLLBACK
+[0m23:06:16.282364 [debug] [ThreadPool]: On list_dbt_test_public_silver: Close
+[0m23:06:16.282364 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_dbt_test_public_silver, now list_dbt_test_public)
+[0m23:06:16.287030 [debug] [ThreadPool]: Using postgres connection "list_dbt_test_public"
+[0m23:06:16.287030 [debug] [ThreadPool]: On list_dbt_test_public: BEGIN
+[0m23:06:16.287030 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m23:06:16.417485 [debug] [ThreadPool]: SQL status: BEGIN in 0.130 seconds
+[0m23:06:16.417485 [debug] [ThreadPool]: Using postgres connection "list_dbt_test_public"
+[0m23:06:16.418522 [debug] [ThreadPool]: On list_dbt_test_public: /* {"app": "dbt", "dbt_version": "1.10.6", "profile_name": "dbt_etl_test", "target_name": "dev", "connection_name": "list_dbt_test_public"} */
+select
+      'dbt_test' as database,
+      tablename as name,
+      schemaname as schema,
+      'table' as type
+    from pg_tables
+    where schemaname ilike 'public'
+    union all
+    select
+      'dbt_test' as database,
+      viewname as name,
+      schemaname as schema,
+      'view' as type
+    from pg_views
+    where schemaname ilike 'public'
+    union all
+    select
+      'dbt_test' as database,
+      matviewname as name,
+      schemaname as schema,
+      'materialized_view' as type
+    from pg_matviews
+    where schemaname ilike 'public'
+  
+[0m23:06:16.427868 [debug] [ThreadPool]: SQL status: SELECT 5 in 0.010 seconds
+[0m23:06:16.428852 [debug] [ThreadPool]: On list_dbt_test_public: ROLLBACK
+[0m23:06:16.454414 [debug] [ThreadPool]: On list_dbt_test_public: Close
+[0m23:06:16.455414 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_dbt_test_public, now list_dbt_test_public_bronze)
+[0m23:06:16.458959 [debug] [ThreadPool]: Using postgres connection "list_dbt_test_public_bronze"
+[0m23:06:16.459956 [debug] [ThreadPool]: On list_dbt_test_public_bronze: BEGIN
+[0m23:06:16.459956 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m23:06:16.541405 [debug] [ThreadPool]: SQL status: BEGIN in 0.081 seconds
+[0m23:06:16.541405 [debug] [ThreadPool]: Using postgres connection "list_dbt_test_public_bronze"
+[0m23:06:16.541405 [debug] [ThreadPool]: On list_dbt_test_public_bronze: /* {"app": "dbt", "dbt_version": "1.10.6", "profile_name": "dbt_etl_test", "target_name": "dev", "connection_name": "list_dbt_test_public_bronze"} */
+select
+      'dbt_test' as database,
+      tablename as name,
+      schemaname as schema,
+      'table' as type
+    from pg_tables
+    where schemaname ilike 'public_bronze'
+    union all
+    select
+      'dbt_test' as database,
+      viewname as name,
+      schemaname as schema,
+      'view' as type
+    from pg_views
+    where schemaname ilike 'public_bronze'
+    union all
+    select
+      'dbt_test' as database,
+      matviewname as name,
+      schemaname as schema,
+      'materialized_view' as type
+    from pg_matviews
+    where schemaname ilike 'public_bronze'
+  
+[0m23:06:16.558863 [debug] [ThreadPool]: SQL status: SELECT 5 in 0.016 seconds
+[0m23:06:16.559654 [debug] [ThreadPool]: On list_dbt_test_public_bronze: ROLLBACK
+[0m23:06:16.590784 [debug] [ThreadPool]: On list_dbt_test_public_bronze: Close
+[0m23:06:16.591781 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_dbt_test_public_bronze, now list_dbt_test_public_gold)
+[0m23:06:16.593487 [debug] [ThreadPool]: Using postgres connection "list_dbt_test_public_gold"
+[0m23:06:16.593487 [debug] [ThreadPool]: On list_dbt_test_public_gold: BEGIN
+[0m23:06:16.593487 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m23:06:16.806560 [debug] [ThreadPool]: SQL status: BEGIN in 0.215 seconds
+[0m23:06:16.806560 [debug] [ThreadPool]: Using postgres connection "list_dbt_test_public_gold"
+[0m23:06:16.806560 [debug] [ThreadPool]: On list_dbt_test_public_gold: /* {"app": "dbt", "dbt_version": "1.10.6", "profile_name": "dbt_etl_test", "target_name": "dev", "connection_name": "list_dbt_test_public_gold"} */
+select
+      'dbt_test' as database,
+      tablename as name,
+      schemaname as schema,
+      'table' as type
+    from pg_tables
+    where schemaname ilike 'public_gold'
+    union all
+    select
+      'dbt_test' as database,
+      viewname as name,
+      schemaname as schema,
+      'view' as type
+    from pg_views
+    where schemaname ilike 'public_gold'
+    union all
+    select
+      'dbt_test' as database,
+      matviewname as name,
+      schemaname as schema,
+      'materialized_view' as type
+    from pg_matviews
+    where schemaname ilike 'public_gold'
+  
+[0m23:06:16.856174 [debug] [ThreadPool]: SQL status: SELECT 1 in 0.045 seconds
+[0m23:06:16.856174 [debug] [ThreadPool]: On list_dbt_test_public_gold: ROLLBACK
+[0m23:06:16.889701 [debug] [ThreadPool]: On list_dbt_test_public_gold: Close
+[0m23:06:16.912538 [debug] [MainThread]: Using postgres connection "master"
+[0m23:06:16.912538 [debug] [MainThread]: On master: BEGIN
+[0m23:06:16.914544 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m23:06:17.025312 [debug] [MainThread]: SQL status: BEGIN in 0.115 seconds
+[0m23:06:17.025312 [debug] [MainThread]: Using postgres connection "master"
+[0m23:06:17.025312 [debug] [MainThread]: On master: /* {"app": "dbt", "dbt_version": "1.10.6", "profile_name": "dbt_etl_test", "target_name": "dev", "connection_name": "master"} */
+with relation as (
+        select
+            pg_rewrite.ev_class as class,
+            pg_rewrite.oid as id
+        from pg_rewrite
+    ),
+    class as (
+        select
+            oid as id,
+            relname as name,
+            relnamespace as schema,
+            relkind as kind
+        from pg_class
+    ),
+    dependency as (
+        select distinct
+            pg_depend.objid as id,
+            pg_depend.refobjid as ref
+        from pg_depend
+    ),
+    schema as (
+        select
+            pg_namespace.oid as id,
+            pg_namespace.nspname as name
+        from pg_namespace
+        where nspname != 'information_schema' and nspname not like 'pg\_%'
+    ),
+    referenced as (
+        select
+            relation.id AS id,
+            referenced_class.name ,
+            referenced_class.schema ,
+            referenced_class.kind
+        from relation
+        join class as referenced_class on relation.class=referenced_class.id
+        where referenced_class.kind in ('r', 'v', 'm')
+    ),
+    relationships as (
+        select
+            referenced.name as referenced_name,
+            referenced.schema as referenced_schema_id,
+            dependent_class.name as dependent_name,
+            dependent_class.schema as dependent_schema_id,
+            referenced.kind as kind
+        from referenced
+        join dependency on referenced.id=dependency.id
+        join class as dependent_class on dependency.ref=dependent_class.id
+        where
+            (referenced.name != dependent_class.name or
+             referenced.schema != dependent_class.schema)
+    )
+
+    select
+        referenced_schema.name as referenced_schema,
+        relationships.referenced_name as referenced_name,
+        dependent_schema.name as dependent_schema,
+        relationships.dependent_name as dependent_name
+    from relationships
+    join schema as dependent_schema on relationships.dependent_schema_id=dependent_schema.id
+    join schema as referenced_schema on relationships.referenced_schema_id=referenced_schema.id
+    group by referenced_schema, referenced_name, dependent_schema, dependent_name
+    order by referenced_schema, referenced_name, dependent_schema, dependent_name;
+[0m23:06:17.074351 [debug] [MainThread]: SQL status: SELECT 0 in 0.052 seconds
+[0m23:06:17.074351 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '5c08ce8c-5c39-42ee-a0e2-e9db76701494', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000122B5A9A780>]}
+[0m23:06:17.074351 [debug] [MainThread]: On master: ROLLBACK
+[0m23:06:17.090979 [debug] [MainThread]: Using postgres connection "master"
+[0m23:06:17.090979 [debug] [MainThread]: On master: BEGIN
+[0m23:06:17.124874 [debug] [MainThread]: SQL status: BEGIN in 0.032 seconds
+[0m23:06:17.124874 [debug] [MainThread]: On master: COMMIT
+[0m23:06:17.124874 [debug] [MainThread]: Using postgres connection "master"
+[0m23:06:17.124874 [debug] [MainThread]: On master: COMMIT
+[0m23:06:17.124874 [debug] [MainThread]: SQL status: COMMIT in 0.006 seconds
+[0m23:06:17.124874 [debug] [MainThread]: On master: Close
+[0m23:06:17.140886 [debug] [Thread-1 (]: Began running node model.dbt_etl_test.clientes
+[0m23:06:17.140886 [info ] [Thread-1 (]: 1 of 13 START sql table model public.clientes .................................. [RUN]
+[0m23:06:17.140886 [debug] [Thread-1 (]: Acquiring new postgres connection 'model.dbt_etl_test.clientes'
+[0m23:06:17.145918 [debug] [Thread-1 (]: Began compiling node model.dbt_etl_test.clientes
+[0m23:06:17.149428 [debug] [Thread-1 (]: Writing injected SQL for node "model.dbt_etl_test.clientes"
+[0m23:06:17.151434 [debug] [Thread-1 (]: Began executing node model.dbt_etl_test.clientes
+[0m23:06:17.179022 [debug] [Thread-1 (]: Writing runtime sql for node "model.dbt_etl_test.clientes"
+[0m23:06:17.181027 [debug] [Thread-1 (]: Using postgres connection "model.dbt_etl_test.clientes"
+[0m23:06:17.181027 [debug] [Thread-1 (]: On model.dbt_etl_test.clientes: BEGIN
+[0m23:06:17.181027 [debug] [Thread-1 (]: Opening a new connection, currently in state init
+[0m23:06:17.306895 [debug] [Thread-1 (]: SQL status: BEGIN in 0.133 seconds
+[0m23:06:17.306895 [debug] [Thread-1 (]: Using postgres connection "model.dbt_etl_test.clientes"
+[0m23:06:17.306895 [debug] [Thread-1 (]: On model.dbt_etl_test.clientes: /* {"app": "dbt", "dbt_version": "1.10.6", "profile_name": "dbt_etl_test", "target_name": "dev", "node_id": "model.dbt_etl_test.clientes"} */
+
+  
+    
+
+  create  table "dbt_test"."public"."clientes__dbt_tmp"
+  
+  
+    as
+  
+  (
+    -- models/raw/clientes.sql
+select * from "dbt_test"."public"."clientes"
+  );
+  
+[0m23:06:17.358402 [debug] [Thread-1 (]: SQL status: SELECT 99 in 0.046 seconds
+[0m23:06:17.358402 [debug] [Thread-1 (]: Using postgres connection "model.dbt_etl_test.clientes"
+[0m23:06:17.358402 [debug] [Thread-1 (]: On model.dbt_etl_test.clientes: /* {"app": "dbt", "dbt_version": "1.10.6", "profile_name": "dbt_etl_test", "target_name": "dev", "node_id": "model.dbt_etl_test.clientes"} */
+alter table "dbt_test"."public"."clientes" rename to "clientes__dbt_backup"
+[0m23:06:17.390931 [debug] [Thread-1 (]: SQL status: ALTER TABLE in 0.032 seconds
+[0m23:06:17.407217 [debug] [Thread-1 (]: Using postgres connection "model.dbt_etl_test.clientes"
+[0m23:06:17.408200 [debug] [Thread-1 (]: On model.dbt_etl_test.clientes: /* {"app": "dbt", "dbt_version": "1.10.6", "profile_name": "dbt_etl_test", "target_name": "dev", "node_id": "model.dbt_etl_test.clientes"} */
+alter table "dbt_test"."public"."clientes__dbt_tmp" rename to "clientes"
+[0m23:06:17.424641 [debug] [Thread-1 (]: SQL status: ALTER TABLE in 0.016 seconds
+[0m23:06:17.424641 [debug] [Thread-1 (]: On model.dbt_etl_test.clientes: COMMIT
+[0m23:06:17.424641 [debug] [Thread-1 (]: Using postgres connection "model.dbt_etl_test.clientes"
+[0m23:06:17.424641 [debug] [Thread-1 (]: On model.dbt_etl_test.clientes: COMMIT
+[0m23:06:17.548499 [debug] [Thread-1 (]: SQL status: COMMIT in 0.117 seconds
+[0m23:06:17.555176 [debug] [Thread-1 (]: Applying DROP to: "dbt_test"."public"."clientes__dbt_backup"
+[0m23:06:17.570958 [debug] [Thread-1 (]: Using postgres connection "model.dbt_etl_test.clientes"
+[0m23:06:17.570958 [debug] [Thread-1 (]: On model.dbt_etl_test.clientes: /* {"app": "dbt", "dbt_version": "1.10.6", "profile_name": "dbt_etl_test", "target_name": "dev", "node_id": "model.dbt_etl_test.clientes"} */
+drop table if exists "dbt_test"."public"."clientes__dbt_backup" cascade
+[0m23:06:17.699094 [debug] [Thread-1 (]: SQL status: DROP TABLE in 0.131 seconds
+[0m23:06:17.706410 [debug] [Thread-1 (]: On model.dbt_etl_test.clientes: Close
+[0m23:06:17.710437 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '5c08ce8c-5c39-42ee-a0e2-e9db76701494', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000122B31986E0>]}
+[0m23:06:17.710437 [info ] [Thread-1 (]: 1 of 13 OK created sql table model public.clientes ............................. [[32mSELECT 99[0m in 0.57s]
+[0m23:06:17.710437 [debug] [Thread-1 (]: Finished running node model.dbt_etl_test.clientes
+[0m23:06:17.710437 [debug] [Thread-1 (]: Began running node model.dbt_etl_test.fornecedores
+[0m23:06:17.710437 [info ] [Thread-1 (]: 2 of 13 START sql table model public.fornecedores .............................. [RUN]
+[0m23:06:17.714439 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.dbt_etl_test.clientes, now model.dbt_etl_test.fornecedores)
+[0m23:06:17.714439 [debug] [Thread-1 (]: Began compiling node model.dbt_etl_test.fornecedores
+[0m23:06:17.714439 [debug] [Thread-1 (]: Writing injected SQL for node "model.dbt_etl_test.fornecedores"
+[0m23:06:17.714439 [debug] [Thread-1 (]: Began executing node model.dbt_etl_test.fornecedores
+[0m23:06:17.714439 [debug] [Thread-1 (]: Writing runtime sql for node "model.dbt_etl_test.fornecedores"
+[0m23:06:17.714439 [debug] [Thread-1 (]: Using postgres connection "model.dbt_etl_test.fornecedores"
+[0m23:06:17.714439 [debug] [Thread-1 (]: On model.dbt_etl_test.fornecedores: BEGIN
+[0m23:06:17.714439 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m23:06:17.811159 [debug] [Thread-1 (]: SQL status: BEGIN in 0.092 seconds
+[0m23:06:17.811159 [debug] [Thread-1 (]: Using postgres connection "model.dbt_etl_test.fornecedores"
+[0m23:06:17.811159 [debug] [Thread-1 (]: On model.dbt_etl_test.fornecedores: /* {"app": "dbt", "dbt_version": "1.10.6", "profile_name": "dbt_etl_test", "target_name": "dev", "node_id": "model.dbt_etl_test.fornecedores"} */
+
+  
+    
+
+  create  table "dbt_test"."public"."fornecedores__dbt_tmp"
+  
+  
+    as
+  
+  (
+    -- models/raw/fornecedores.sql
+select * from "dbt_test"."public"."fornecedores"
+  );
+  
+[0m23:06:17.822930 [debug] [Thread-1 (]: SQL status: SELECT 99 in 0.008 seconds
+[0m23:06:17.823940 [debug] [Thread-1 (]: Using postgres connection "model.dbt_etl_test.fornecedores"
+[0m23:06:17.823940 [debug] [Thread-1 (]: On model.dbt_etl_test.fornecedores: /* {"app": "dbt", "dbt_version": "1.10.6", "profile_name": "dbt_etl_test", "target_name": "dev", "node_id": "model.dbt_etl_test.fornecedores"} */
+alter table "dbt_test"."public"."fornecedores" rename to "fornecedores__dbt_backup"
+[0m23:06:17.907792 [debug] [Thread-1 (]: SQL status: ALTER TABLE in 0.091 seconds
+[0m23:06:17.923674 [debug] [Thread-1 (]: Using postgres connection "model.dbt_etl_test.fornecedores"
+[0m23:06:17.925707 [debug] [Thread-1 (]: On model.dbt_etl_test.fornecedores: /* {"app": "dbt", "dbt_version": "1.10.6", "profile_name": "dbt_etl_test", "target_name": "dev", "node_id": "model.dbt_etl_test.fornecedores"} */
+alter table "dbt_test"."public"."fornecedores__dbt_tmp" rename to "fornecedores"
+[0m23:06:17.990205 [debug] [Thread-1 (]: SQL status: ALTER TABLE in 0.069 seconds
+[0m23:06:17.990205 [debug] [Thread-1 (]: On model.dbt_etl_test.fornecedores: COMMIT
+[0m23:06:17.990205 [debug] [Thread-1 (]: Using postgres connection "model.dbt_etl_test.fornecedores"
+[0m23:06:17.990205 [debug] [Thread-1 (]: On model.dbt_etl_test.fornecedores: COMMIT
+[0m23:06:18.023766 [debug] [Thread-1 (]: SQL status: COMMIT in 0.032 seconds
+[0m23:06:18.023766 [debug] [Thread-1 (]: Applying DROP to: "dbt_test"."public"."fornecedores__dbt_backup"
+[0m23:06:18.023766 [debug] [Thread-1 (]: Using postgres connection "model.dbt_etl_test.fornecedores"
+[0m23:06:18.023766 [debug] [Thread-1 (]: On model.dbt_etl_test.fornecedores: /* {"app": "dbt", "dbt_version": "1.10.6", "profile_name": "dbt_etl_test", "target_name": "dev", "node_id": "model.dbt_etl_test.fornecedores"} */
+drop table if exists "dbt_test"."public"."fornecedores__dbt_backup" cascade
+[0m23:06:18.128387 [debug] [Thread-1 (]: SQL status: DROP TABLE in 0.102 seconds
+[0m23:06:18.139207 [debug] [Thread-1 (]: On model.dbt_etl_test.fornecedores: Close
+[0m23:06:18.140217 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '5c08ce8c-5c39-42ee-a0e2-e9db76701494', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000122B5B18110>]}
+[0m23:06:18.140866 [info ] [Thread-1 (]: 2 of 13 OK created sql table model public.fornecedores ......................... [[32mSELECT 99[0m in 0.43s]
+[0m23:06:18.140866 [debug] [Thread-1 (]: Finished running node model.dbt_etl_test.fornecedores
+[0m23:06:18.140866 [debug] [Thread-1 (]: Began running node model.dbt_etl_test.produtos
+[0m23:06:18.140866 [info ] [Thread-1 (]: 3 of 13 START sql table model public.produtos .................................. [RUN]
+[0m23:06:18.140866 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.dbt_etl_test.fornecedores, now model.dbt_etl_test.produtos)
+[0m23:06:18.140866 [debug] [Thread-1 (]: Began compiling node model.dbt_etl_test.produtos
+[0m23:06:18.140866 [debug] [Thread-1 (]: Writing injected SQL for node "model.dbt_etl_test.produtos"
+[0m23:06:18.140866 [debug] [Thread-1 (]: Began executing node model.dbt_etl_test.produtos
+[0m23:06:18.140866 [debug] [Thread-1 (]: Writing runtime sql for node "model.dbt_etl_test.produtos"
+[0m23:06:18.140866 [debug] [Thread-1 (]: Using postgres connection "model.dbt_etl_test.produtos"
+[0m23:06:18.140866 [debug] [Thread-1 (]: On model.dbt_etl_test.produtos: BEGIN
+[0m23:06:18.140866 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m23:06:18.623910 [debug] [Thread-1 (]: SQL status: BEGIN in 0.474 seconds
+[0m23:06:18.623910 [debug] [Thread-1 (]: Using postgres connection "model.dbt_etl_test.produtos"
+[0m23:06:18.624907 [debug] [Thread-1 (]: On model.dbt_etl_test.produtos: /* {"app": "dbt", "dbt_version": "1.10.6", "profile_name": "dbt_etl_test", "target_name": "dev", "node_id": "model.dbt_etl_test.produtos"} */
+
+  
+    
+
+  create  table "dbt_test"."public"."produtos__dbt_tmp"
+  
+  
+    as
+  
+  (
+    -- models/raw/produtos.sql
+select * from "dbt_test"."public"."produtos"
+  );
+  
+[0m23:06:18.651317 [debug] [Thread-1 (]: SQL status: SELECT 499 in 0.026 seconds
+[0m23:06:18.656432 [debug] [Thread-1 (]: Using postgres connection "model.dbt_etl_test.produtos"
+[0m23:06:18.656432 [debug] [Thread-1 (]: On model.dbt_etl_test.produtos: /* {"app": "dbt", "dbt_version": "1.10.6", "profile_name": "dbt_etl_test", "target_name": "dev", "node_id": "model.dbt_etl_test.produtos"} */
+alter table "dbt_test"."public"."produtos" rename to "produtos__dbt_backup"
+[0m23:06:18.756356 [debug] [Thread-1 (]: SQL status: ALTER TABLE in 0.098 seconds
+[0m23:06:18.760317 [debug] [Thread-1 (]: Using postgres connection "model.dbt_etl_test.produtos"
+[0m23:06:18.760317 [debug] [Thread-1 (]: On model.dbt_etl_test.produtos: /* {"app": "dbt", "dbt_version": "1.10.6", "profile_name": "dbt_etl_test", "target_name": "dev", "node_id": "model.dbt_etl_test.produtos"} */
+alter table "dbt_test"."public"."produtos__dbt_tmp" rename to "produtos"
+[0m23:06:18.803615 [debug] [Thread-1 (]: SQL status: ALTER TABLE in 0.042 seconds
+[0m23:06:18.803615 [debug] [Thread-1 (]: On model.dbt_etl_test.produtos: COMMIT
+[0m23:06:18.806261 [debug] [Thread-1 (]: Using postgres connection "model.dbt_etl_test.produtos"
+[0m23:06:18.806261 [debug] [Thread-1 (]: On model.dbt_etl_test.produtos: COMMIT
+[0m23:06:18.908539 [debug] [Thread-1 (]: SQL status: COMMIT in 0.104 seconds
+[0m23:06:18.951797 [debug] [Thread-1 (]: Applying DROP to: "dbt_test"."public"."produtos__dbt_backup"
+[0m23:06:18.951797 [debug] [Thread-1 (]: Using postgres connection "model.dbt_etl_test.produtos"
+[0m23:06:18.951797 [debug] [Thread-1 (]: On model.dbt_etl_test.produtos: /* {"app": "dbt", "dbt_version": "1.10.6", "profile_name": "dbt_etl_test", "target_name": "dev", "node_id": "model.dbt_etl_test.produtos"} */
+drop table if exists "dbt_test"."public"."produtos__dbt_backup" cascade
+[0m23:06:19.087907 [debug] [Thread-1 (]: SQL status: DROP TABLE in 0.141 seconds
+[0m23:06:19.101249 [debug] [Thread-1 (]: On model.dbt_etl_test.produtos: Close
+[0m23:06:19.101249 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '5c08ce8c-5c39-42ee-a0e2-e9db76701494', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000122B5BF89E0>]}
+[0m23:06:19.103258 [info ] [Thread-1 (]: 3 of 13 OK created sql table model public.produtos ............................. [[32mSELECT 499[0m in 0.96s]
+[0m23:06:19.103258 [debug] [Thread-1 (]: Finished running node model.dbt_etl_test.produtos
+[0m23:06:19.103258 [debug] [Thread-1 (]: Began running node model.dbt_etl_test.regioes
+[0m23:06:19.103258 [info ] [Thread-1 (]: 4 of 13 START sql table model public.regioes ................................... [RUN]
+[0m23:06:19.103258 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.dbt_etl_test.produtos, now model.dbt_etl_test.regioes)
+[0m23:06:19.103258 [debug] [Thread-1 (]: Began compiling node model.dbt_etl_test.regioes
+[0m23:06:19.107367 [debug] [Thread-1 (]: Writing injected SQL for node "model.dbt_etl_test.regioes"
+[0m23:06:19.107367 [debug] [Thread-1 (]: Began executing node model.dbt_etl_test.regioes
+[0m23:06:19.109374 [debug] [Thread-1 (]: Writing runtime sql for node "model.dbt_etl_test.regioes"
+[0m23:06:19.111379 [debug] [Thread-1 (]: Using postgres connection "model.dbt_etl_test.regioes"
+[0m23:06:19.111379 [debug] [Thread-1 (]: On model.dbt_etl_test.regioes: BEGIN
+[0m23:06:19.111379 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m23:06:19.341466 [debug] [Thread-1 (]: SQL status: BEGIN in 0.230 seconds
+[0m23:06:19.343724 [debug] [Thread-1 (]: Using postgres connection "model.dbt_etl_test.regioes"
+[0m23:06:19.343724 [debug] [Thread-1 (]: On model.dbt_etl_test.regioes: /* {"app": "dbt", "dbt_version": "1.10.6", "profile_name": "dbt_etl_test", "target_name": "dev", "node_id": "model.dbt_etl_test.regioes"} */
+
+  
+    
+
+  create  table "dbt_test"."public"."regioes__dbt_tmp"
+  
+  
+    as
+  
+  (
+    -- models/raw/regioes.sql
+select * from "dbt_test"."public"."regioes"
+  );
+  
+[0m23:06:19.407428 [debug] [Thread-1 (]: SQL status: SELECT 269 in 0.075 seconds
+[0m23:06:19.423039 [debug] [Thread-1 (]: Using postgres connection "model.dbt_etl_test.regioes"
+[0m23:06:19.423039 [debug] [Thread-1 (]: On model.dbt_etl_test.regioes: /* {"app": "dbt", "dbt_version": "1.10.6", "profile_name": "dbt_etl_test", "target_name": "dev", "node_id": "model.dbt_etl_test.regioes"} */
+alter table "dbt_test"."public"."regioes" rename to "regioes__dbt_backup"
+[0m23:06:19.459167 [debug] [Thread-1 (]: SQL status: ALTER TABLE in 0.040 seconds
+[0m23:06:19.459167 [debug] [Thread-1 (]: Using postgres connection "model.dbt_etl_test.regioes"
+[0m23:06:19.459167 [debug] [Thread-1 (]: On model.dbt_etl_test.regioes: /* {"app": "dbt", "dbt_version": "1.10.6", "profile_name": "dbt_etl_test", "target_name": "dev", "node_id": "model.dbt_etl_test.regioes"} */
+alter table "dbt_test"."public"."regioes__dbt_tmp" rename to "regioes"
+[0m23:06:19.523044 [debug] [Thread-1 (]: SQL status: ALTER TABLE in 0.062 seconds
+[0m23:06:19.523044 [debug] [Thread-1 (]: On model.dbt_etl_test.regioes: COMMIT
+[0m23:06:19.523044 [debug] [Thread-1 (]: Using postgres connection "model.dbt_etl_test.regioes"
+[0m23:06:19.523044 [debug] [Thread-1 (]: On model.dbt_etl_test.regioes: COMMIT
+[0m23:06:19.559790 [debug] [Thread-1 (]: SQL status: COMMIT in 0.034 seconds
+[0m23:06:19.559790 [debug] [Thread-1 (]: Applying DROP to: "dbt_test"."public"."regioes__dbt_backup"
+[0m23:06:19.573547 [debug] [Thread-1 (]: Using postgres connection "model.dbt_etl_test.regioes"
+[0m23:06:19.573547 [debug] [Thread-1 (]: On model.dbt_etl_test.regioes: /* {"app": "dbt", "dbt_version": "1.10.6", "profile_name": "dbt_etl_test", "target_name": "dev", "node_id": "model.dbt_etl_test.regioes"} */
+drop table if exists "dbt_test"."public"."regioes__dbt_backup" cascade
+[0m23:06:19.656892 [debug] [Thread-1 (]: SQL status: DROP TABLE in 0.093 seconds
+[0m23:06:19.656892 [debug] [Thread-1 (]: On model.dbt_etl_test.regioes: Close
+[0m23:06:19.656892 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '5c08ce8c-5c39-42ee-a0e2-e9db76701494', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000122B5B2A930>]}
+[0m23:06:19.656892 [info ] [Thread-1 (]: 4 of 13 OK created sql table model public.regioes .............................. [[32mSELECT 269[0m in 0.55s]
+[0m23:06:19.672615 [debug] [Thread-1 (]: Finished running node model.dbt_etl_test.regioes
+[0m23:06:19.673226 [debug] [Thread-1 (]: Began running node model.dbt_etl_test.vendas
+[0m23:06:19.673226 [info ] [Thread-1 (]: 5 of 13 START sql table model public.vendas .................................... [RUN]
+[0m23:06:19.673226 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.dbt_etl_test.regioes, now model.dbt_etl_test.vendas)
+[0m23:06:19.673226 [debug] [Thread-1 (]: Began compiling node model.dbt_etl_test.vendas
+[0m23:06:19.673226 [debug] [Thread-1 (]: Writing injected SQL for node "model.dbt_etl_test.vendas"
+[0m23:06:19.673226 [debug] [Thread-1 (]: Began executing node model.dbt_etl_test.vendas
+[0m23:06:19.673226 [debug] [Thread-1 (]: Writing runtime sql for node "model.dbt_etl_test.vendas"
+[0m23:06:19.673226 [debug] [Thread-1 (]: Using postgres connection "model.dbt_etl_test.vendas"
+[0m23:06:19.673226 [debug] [Thread-1 (]: On model.dbt_etl_test.vendas: BEGIN
+[0m23:06:19.673226 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m23:06:20.194902 [debug] [Thread-1 (]: SQL status: BEGIN in 0.521 seconds
+[0m23:06:20.194902 [debug] [Thread-1 (]: Using postgres connection "model.dbt_etl_test.vendas"
+[0m23:06:20.194902 [debug] [Thread-1 (]: On model.dbt_etl_test.vendas: /* {"app": "dbt", "dbt_version": "1.10.6", "profile_name": "dbt_etl_test", "target_name": "dev", "node_id": "model.dbt_etl_test.vendas"} */
+
+  
+    
+
+  create  table "dbt_test"."public"."vendas__dbt_tmp"
+  
+  
+    as
+  
+  (
+    -- models/raw/vendas.sql
+select * from "dbt_test"."public"."vendas"
+  );
+  
+[0m23:06:20.206664 [debug] [Thread-1 (]: SQL status: SELECT 249 in 0.017 seconds
+[0m23:06:20.223525 [debug] [Thread-1 (]: Using postgres connection "model.dbt_etl_test.vendas"
+[0m23:06:20.223525 [debug] [Thread-1 (]: On model.dbt_etl_test.vendas: /* {"app": "dbt", "dbt_version": "1.10.6", "profile_name": "dbt_etl_test", "target_name": "dev", "node_id": "model.dbt_etl_test.vendas"} */
+alter table "dbt_test"."public"."vendas" rename to "vendas__dbt_backup"
+[0m23:06:20.242146 [debug] [Thread-1 (]: SQL status: ALTER TABLE in 0.018 seconds
+[0m23:06:20.246154 [debug] [Thread-1 (]: Using postgres connection "model.dbt_etl_test.vendas"
+[0m23:06:20.246154 [debug] [Thread-1 (]: On model.dbt_etl_test.vendas: /* {"app": "dbt", "dbt_version": "1.10.6", "profile_name": "dbt_etl_test", "target_name": "dev", "node_id": "model.dbt_etl_test.vendas"} */
+alter table "dbt_test"."public"."vendas__dbt_tmp" rename to "vendas"
+[0m23:06:20.337942 [debug] [Thread-1 (]: SQL status: ALTER TABLE in 0.098 seconds
+[0m23:06:20.348772 [debug] [Thread-1 (]: On model.dbt_etl_test.vendas: COMMIT
+[0m23:06:20.348772 [debug] [Thread-1 (]: Using postgres connection "model.dbt_etl_test.vendas"
+[0m23:06:20.350787 [debug] [Thread-1 (]: On model.dbt_etl_test.vendas: COMMIT
+[0m23:06:20.372392 [debug] [Thread-1 (]: SQL status: COMMIT in 0.029 seconds
+[0m23:06:20.372392 [debug] [Thread-1 (]: Applying DROP to: "dbt_test"."public"."vendas__dbt_backup"
+[0m23:06:20.372392 [debug] [Thread-1 (]: Using postgres connection "model.dbt_etl_test.vendas"
+[0m23:06:20.386433 [debug] [Thread-1 (]: On model.dbt_etl_test.vendas: /* {"app": "dbt", "dbt_version": "1.10.6", "profile_name": "dbt_etl_test", "target_name": "dev", "node_id": "model.dbt_etl_test.vendas"} */
+drop table if exists "dbt_test"."public"."vendas__dbt_backup" cascade
+[0m23:06:20.489755 [debug] [Thread-1 (]: SQL status: DROP TABLE in 0.103 seconds
+[0m23:06:20.492160 [debug] [Thread-1 (]: On model.dbt_etl_test.vendas: Close
+[0m23:06:20.494175 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '5c08ce8c-5c39-42ee-a0e2-e9db76701494', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000122B5B47080>]}
+[0m23:06:20.494175 [info ] [Thread-1 (]: 5 of 13 OK created sql table model public.vendas ............................... [[32mSELECT 249[0m in 0.82s]
+[0m23:06:20.496184 [debug] [Thread-1 (]: Finished running node model.dbt_etl_test.vendas
+[0m23:06:20.496184 [debug] [Thread-1 (]: Began running node model.dbt_etl_test.brz_clientes
+[0m23:06:20.498193 [info ] [Thread-1 (]: 6 of 13 START sql table model public_bronze.brz_clientes ....................... [RUN]
+[0m23:06:20.498193 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.dbt_etl_test.vendas, now model.dbt_etl_test.brz_clientes)
+[0m23:06:20.498193 [debug] [Thread-1 (]: Began compiling node model.dbt_etl_test.brz_clientes
+[0m23:06:20.500808 [debug] [Thread-1 (]: Writing injected SQL for node "model.dbt_etl_test.brz_clientes"
+[0m23:06:20.502814 [debug] [Thread-1 (]: Began executing node model.dbt_etl_test.brz_clientes
+[0m23:06:20.504818 [debug] [Thread-1 (]: Writing runtime sql for node "model.dbt_etl_test.brz_clientes"
+[0m23:06:20.505823 [debug] [Thread-1 (]: Using postgres connection "model.dbt_etl_test.brz_clientes"
+[0m23:06:20.505823 [debug] [Thread-1 (]: On model.dbt_etl_test.brz_clientes: BEGIN
+[0m23:06:20.505823 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m23:06:20.773722 [debug] [Thread-1 (]: SQL status: BEGIN in 0.271 seconds
+[0m23:06:20.773722 [debug] [Thread-1 (]: Using postgres connection "model.dbt_etl_test.brz_clientes"
+[0m23:06:20.773722 [debug] [Thread-1 (]: On model.dbt_etl_test.brz_clientes: /* {"app": "dbt", "dbt_version": "1.10.6", "profile_name": "dbt_etl_test", "target_name": "dev", "node_id": "model.dbt_etl_test.brz_clientes"} */
+
+  
+    
+
+  create  table "dbt_test"."public_bronze"."brz_clientes__dbt_tmp"
+  
+  
+    as
+  
+  (
+    -- models/bronze/brz_clientes.sql
+
+select * from "dbt_test"."public"."clientes"
+  );
+  
+[0m23:06:20.789818 [debug] [Thread-1 (]: SQL status: SELECT 99 in 0.021 seconds
+[0m23:06:20.803782 [debug] [Thread-1 (]: Using postgres connection "model.dbt_etl_test.brz_clientes"
+[0m23:06:20.804790 [debug] [Thread-1 (]: On model.dbt_etl_test.brz_clientes: /* {"app": "dbt", "dbt_version": "1.10.6", "profile_name": "dbt_etl_test", "target_name": "dev", "node_id": "model.dbt_etl_test.brz_clientes"} */
+alter table "dbt_test"."public_bronze"."brz_clientes" rename to "brz_clientes__dbt_backup"
+[0m23:06:20.890621 [debug] [Thread-1 (]: SQL status: ALTER TABLE in 0.093 seconds
+[0m23:06:20.902497 [debug] [Thread-1 (]: Using postgres connection "model.dbt_etl_test.brz_clientes"
+[0m23:06:20.902497 [debug] [Thread-1 (]: On model.dbt_etl_test.brz_clientes: /* {"app": "dbt", "dbt_version": "1.10.6", "profile_name": "dbt_etl_test", "target_name": "dev", "node_id": "model.dbt_etl_test.brz_clientes"} */
+alter table "dbt_test"."public_bronze"."brz_clientes__dbt_tmp" rename to "brz_clientes"
+[0m23:06:21.023414 [debug] [Thread-1 (]: SQL status: ALTER TABLE in 0.127 seconds
+[0m23:06:21.031905 [debug] [Thread-1 (]: On model.dbt_etl_test.brz_clientes: COMMIT
+[0m23:06:21.031905 [debug] [Thread-1 (]: Using postgres connection "model.dbt_etl_test.brz_clientes"
+[0m23:06:21.031905 [debug] [Thread-1 (]: On model.dbt_etl_test.brz_clientes: COMMIT
+[0m23:06:21.057303 [debug] [Thread-1 (]: SQL status: COMMIT in 0.037 seconds
+[0m23:06:21.073972 [debug] [Thread-1 (]: Applying DROP to: "dbt_test"."public_bronze"."brz_clientes__dbt_backup"
+[0m23:06:21.073972 [debug] [Thread-1 (]: Using postgres connection "model.dbt_etl_test.brz_clientes"
+[0m23:06:21.073972 [debug] [Thread-1 (]: On model.dbt_etl_test.brz_clientes: /* {"app": "dbt", "dbt_version": "1.10.6", "profile_name": "dbt_etl_test", "target_name": "dev", "node_id": "model.dbt_etl_test.brz_clientes"} */
+drop table if exists "dbt_test"."public_bronze"."brz_clientes__dbt_backup" cascade
+[0m23:06:21.174529 [debug] [Thread-1 (]: SQL status: DROP TABLE in 0.100 seconds
+[0m23:06:21.180991 [debug] [Thread-1 (]: On model.dbt_etl_test.brz_clientes: Close
+[0m23:06:21.183006 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '5c08ce8c-5c39-42ee-a0e2-e9db76701494', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000122B5B45B50>]}
+[0m23:06:21.183006 [info ] [Thread-1 (]: 6 of 13 OK created sql table model public_bronze.brz_clientes .................. [[32mSELECT 99[0m in 0.68s]
+[0m23:06:21.183006 [debug] [Thread-1 (]: Finished running node model.dbt_etl_test.brz_clientes
+[0m23:06:21.183006 [debug] [Thread-1 (]: Began running node model.dbt_etl_test.brz_fornecedores
+[0m23:06:21.183006 [info ] [Thread-1 (]: 7 of 13 START sql table model public_bronze.brz_fornecedores ................... [RUN]
+[0m23:06:21.183006 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.dbt_etl_test.brz_clientes, now model.dbt_etl_test.brz_fornecedores)
+[0m23:06:21.183006 [debug] [Thread-1 (]: Began compiling node model.dbt_etl_test.brz_fornecedores
+[0m23:06:21.190114 [debug] [Thread-1 (]: Writing injected SQL for node "model.dbt_etl_test.brz_fornecedores"
+[0m23:06:21.190114 [debug] [Thread-1 (]: Began executing node model.dbt_etl_test.brz_fornecedores
+[0m23:06:21.194428 [debug] [Thread-1 (]: Writing runtime sql for node "model.dbt_etl_test.brz_fornecedores"
+[0m23:06:21.196440 [debug] [Thread-1 (]: Using postgres connection "model.dbt_etl_test.brz_fornecedores"
+[0m23:06:21.196440 [debug] [Thread-1 (]: On model.dbt_etl_test.brz_fornecedores: BEGIN
+[0m23:06:21.196440 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m23:06:21.560837 [debug] [Thread-1 (]: SQL status: BEGIN in 0.364 seconds
+[0m23:06:21.561742 [debug] [Thread-1 (]: Using postgres connection "model.dbt_etl_test.brz_fornecedores"
+[0m23:06:21.561742 [debug] [Thread-1 (]: On model.dbt_etl_test.brz_fornecedores: /* {"app": "dbt", "dbt_version": "1.10.6", "profile_name": "dbt_etl_test", "target_name": "dev", "node_id": "model.dbt_etl_test.brz_fornecedores"} */
+
+  
+    
+
+  create  table "dbt_test"."public_bronze"."brz_fornecedores__dbt_tmp"
+  
+  
+    as
+  
+  (
+    -- models/bronze/brz_fornecedores.sql
+
+select * from "dbt_test"."public"."fornecedores"
+  );
+  
+[0m23:06:21.576151 [debug] [Thread-1 (]: SQL status: SELECT 99 in 0.013 seconds
+[0m23:06:21.580110 [debug] [Thread-1 (]: Using postgres connection "model.dbt_etl_test.brz_fornecedores"
+[0m23:06:21.581110 [debug] [Thread-1 (]: On model.dbt_etl_test.brz_fornecedores: /* {"app": "dbt", "dbt_version": "1.10.6", "profile_name": "dbt_etl_test", "target_name": "dev", "node_id": "model.dbt_etl_test.brz_fornecedores"} */
+alter table "dbt_test"."public_bronze"."brz_fornecedores" rename to "brz_fornecedores__dbt_backup"
+[0m23:06:21.625329 [debug] [Thread-1 (]: SQL status: ALTER TABLE in 0.043 seconds
+[0m23:06:21.629008 [debug] [Thread-1 (]: Using postgres connection "model.dbt_etl_test.brz_fornecedores"
+[0m23:06:21.629008 [debug] [Thread-1 (]: On model.dbt_etl_test.brz_fornecedores: /* {"app": "dbt", "dbt_version": "1.10.6", "profile_name": "dbt_etl_test", "target_name": "dev", "node_id": "model.dbt_etl_test.brz_fornecedores"} */
+alter table "dbt_test"."public_bronze"."brz_fornecedores__dbt_tmp" rename to "brz_fornecedores"
+[0m23:06:21.642535 [debug] [Thread-1 (]: SQL status: ALTER TABLE in 0.013 seconds
+[0m23:06:21.644545 [debug] [Thread-1 (]: On model.dbt_etl_test.brz_fornecedores: COMMIT
+[0m23:06:21.644545 [debug] [Thread-1 (]: Using postgres connection "model.dbt_etl_test.brz_fornecedores"
+[0m23:06:21.644545 [debug] [Thread-1 (]: On model.dbt_etl_test.brz_fornecedores: COMMIT
+[0m23:06:21.659337 [debug] [Thread-1 (]: SQL status: COMMIT in 0.016 seconds
+[0m23:06:21.659337 [debug] [Thread-1 (]: Applying DROP to: "dbt_test"."public_bronze"."brz_fornecedores__dbt_backup"
+[0m23:06:21.659337 [debug] [Thread-1 (]: Using postgres connection "model.dbt_etl_test.brz_fornecedores"
+[0m23:06:21.659337 [debug] [Thread-1 (]: On model.dbt_etl_test.brz_fornecedores: /* {"app": "dbt", "dbt_version": "1.10.6", "profile_name": "dbt_etl_test", "target_name": "dev", "node_id": "model.dbt_etl_test.brz_fornecedores"} */
+drop table if exists "dbt_test"."public_bronze"."brz_fornecedores__dbt_backup" cascade
+[0m23:06:21.708312 [debug] [Thread-1 (]: SQL status: DROP TABLE in 0.051 seconds
+[0m23:06:21.708312 [debug] [Thread-1 (]: On model.dbt_etl_test.brz_fornecedores: Close
+[0m23:06:21.708312 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '5c08ce8c-5c39-42ee-a0e2-e9db76701494', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000122B5B34410>]}
+[0m23:06:21.708312 [info ] [Thread-1 (]: 7 of 13 OK created sql table model public_bronze.brz_fornecedores .............. [[32mSELECT 99[0m in 0.53s]
+[0m23:06:21.708312 [debug] [Thread-1 (]: Finished running node model.dbt_etl_test.brz_fornecedores
+[0m23:06:21.708312 [debug] [Thread-1 (]: Began running node model.dbt_etl_test.brz_produtos
+[0m23:06:21.708312 [info ] [Thread-1 (]: 8 of 13 START sql table model public_bronze.brz_produtos ....................... [RUN]
+[0m23:06:21.722562 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.dbt_etl_test.brz_fornecedores, now model.dbt_etl_test.brz_produtos)
+[0m23:06:21.723570 [debug] [Thread-1 (]: Began compiling node model.dbt_etl_test.brz_produtos
+[0m23:06:21.725618 [debug] [Thread-1 (]: Writing injected SQL for node "model.dbt_etl_test.brz_produtos"
+[0m23:06:21.726678 [debug] [Thread-1 (]: Began executing node model.dbt_etl_test.brz_produtos
+[0m23:06:21.728688 [debug] [Thread-1 (]: Writing runtime sql for node "model.dbt_etl_test.brz_produtos"
+[0m23:06:21.729682 [debug] [Thread-1 (]: Using postgres connection "model.dbt_etl_test.brz_produtos"
+[0m23:06:21.730569 [debug] [Thread-1 (]: On model.dbt_etl_test.brz_produtos: BEGIN
+[0m23:06:21.730569 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m23:06:21.924619 [debug] [Thread-1 (]: SQL status: BEGIN in 0.201 seconds
+[0m23:06:21.924619 [debug] [Thread-1 (]: Using postgres connection "model.dbt_etl_test.brz_produtos"
+[0m23:06:21.924619 [debug] [Thread-1 (]: On model.dbt_etl_test.brz_produtos: /* {"app": "dbt", "dbt_version": "1.10.6", "profile_name": "dbt_etl_test", "target_name": "dev", "node_id": "model.dbt_etl_test.brz_produtos"} */
+
+  
+    
+
+  create  table "dbt_test"."public_bronze"."brz_produtos__dbt_tmp"
+  
+  
+    as
+  
+  (
+    -- models/bronze/brz_produtos.sql
+
+select * from "dbt_test"."public"."produtos"
+  );
+  
+[0m23:06:22.000192 [debug] [Thread-1 (]: SQL status: SELECT 499 in 0.067 seconds
+[0m23:06:22.003301 [debug] [Thread-1 (]: Using postgres connection "model.dbt_etl_test.brz_produtos"
+[0m23:06:22.003301 [debug] [Thread-1 (]: On model.dbt_etl_test.brz_produtos: /* {"app": "dbt", "dbt_version": "1.10.6", "profile_name": "dbt_etl_test", "target_name": "dev", "node_id": "model.dbt_etl_test.brz_produtos"} */
+alter table "dbt_test"."public_bronze"."brz_produtos" rename to "brz_produtos__dbt_backup"
+[0m23:06:22.022593 [debug] [Thread-1 (]: SQL status: ALTER TABLE in 0.018 seconds
+[0m23:06:22.026733 [debug] [Thread-1 (]: Using postgres connection "model.dbt_etl_test.brz_produtos"
+[0m23:06:22.026733 [debug] [Thread-1 (]: On model.dbt_etl_test.brz_produtos: /* {"app": "dbt", "dbt_version": "1.10.6", "profile_name": "dbt_etl_test", "target_name": "dev", "node_id": "model.dbt_etl_test.brz_produtos"} */
+alter table "dbt_test"."public_bronze"."brz_produtos__dbt_tmp" rename to "brz_produtos"
+[0m23:06:22.070587 [debug] [Thread-1 (]: SQL status: ALTER TABLE in 0.058 seconds
+[0m23:06:22.086252 [debug] [Thread-1 (]: On model.dbt_etl_test.brz_produtos: COMMIT
+[0m23:06:22.086252 [debug] [Thread-1 (]: Using postgres connection "model.dbt_etl_test.brz_produtos"
+[0m23:06:22.086252 [debug] [Thread-1 (]: On model.dbt_etl_test.brz_produtos: COMMIT
+[0m23:06:22.118206 [debug] [Thread-1 (]: SQL status: COMMIT in 0.030 seconds
+[0m23:06:22.124620 [debug] [Thread-1 (]: Applying DROP to: "dbt_test"."public_bronze"."brz_produtos__dbt_backup"
+[0m23:06:22.126631 [debug] [Thread-1 (]: Using postgres connection "model.dbt_etl_test.brz_produtos"
+[0m23:06:22.126631 [debug] [Thread-1 (]: On model.dbt_etl_test.brz_produtos: /* {"app": "dbt", "dbt_version": "1.10.6", "profile_name": "dbt_etl_test", "target_name": "dev", "node_id": "model.dbt_etl_test.brz_produtos"} */
+drop table if exists "dbt_test"."public_bronze"."brz_produtos__dbt_backup" cascade
+[0m23:06:22.179767 [debug] [Thread-1 (]: SQL status: DROP TABLE in 0.052 seconds
+[0m23:06:22.181761 [debug] [Thread-1 (]: On model.dbt_etl_test.brz_produtos: Close
+[0m23:06:22.182761 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '5c08ce8c-5c39-42ee-a0e2-e9db76701494', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000122B5348B00>]}
+[0m23:06:22.183759 [info ] [Thread-1 (]: 8 of 13 OK created sql table model public_bronze.brz_produtos .................. [[32mSELECT 499[0m in 0.46s]
+[0m23:06:22.185800 [debug] [Thread-1 (]: Finished running node model.dbt_etl_test.brz_produtos
+[0m23:06:22.185800 [debug] [Thread-1 (]: Began running node model.dbt_etl_test.brz_regioes
+[0m23:06:22.186757 [info ] [Thread-1 (]: 9 of 13 START sql table model public_bronze.brz_regioes ........................ [RUN]
+[0m23:06:22.186757 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.dbt_etl_test.brz_produtos, now model.dbt_etl_test.brz_regioes)
+[0m23:06:22.187759 [debug] [Thread-1 (]: Began compiling node model.dbt_etl_test.brz_regioes
+[0m23:06:22.189755 [debug] [Thread-1 (]: Writing injected SQL for node "model.dbt_etl_test.brz_regioes"
+[0m23:06:22.191083 [debug] [Thread-1 (]: Began executing node model.dbt_etl_test.brz_regioes
+[0m23:06:22.194193 [debug] [Thread-1 (]: Writing runtime sql for node "model.dbt_etl_test.brz_regioes"
+[0m23:06:22.195133 [debug] [Thread-1 (]: Using postgres connection "model.dbt_etl_test.brz_regioes"
+[0m23:06:22.195133 [debug] [Thread-1 (]: On model.dbt_etl_test.brz_regioes: BEGIN
+[0m23:06:22.195133 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m23:06:22.389452 [debug] [Thread-1 (]: SQL status: BEGIN in 0.197 seconds
+[0m23:06:22.389452 [debug] [Thread-1 (]: Using postgres connection "model.dbt_etl_test.brz_regioes"
+[0m23:06:22.394966 [debug] [Thread-1 (]: On model.dbt_etl_test.brz_regioes: /* {"app": "dbt", "dbt_version": "1.10.6", "profile_name": "dbt_etl_test", "target_name": "dev", "node_id": "model.dbt_etl_test.brz_regioes"} */
+
+  
+    
+
+  create  table "dbt_test"."public_bronze"."brz_regioes__dbt_tmp"
+  
+  
+    as
+  
+  (
+    -- models/bronze/brz_regioes.sql
+
+select * from "dbt_test"."public"."regioes"
+  );
+  
+[0m23:06:22.461560 [debug] [Thread-1 (]: SQL status: SELECT 269 in 0.066 seconds
+[0m23:06:22.466541 [debug] [Thread-1 (]: Using postgres connection "model.dbt_etl_test.brz_regioes"
+[0m23:06:22.466541 [debug] [Thread-1 (]: On model.dbt_etl_test.brz_regioes: /* {"app": "dbt", "dbt_version": "1.10.6", "profile_name": "dbt_etl_test", "target_name": "dev", "node_id": "model.dbt_etl_test.brz_regioes"} */
+alter table "dbt_test"."public_bronze"."brz_regioes" rename to "brz_regioes__dbt_backup"
+[0m23:06:22.498224 [debug] [Thread-1 (]: SQL status: ALTER TABLE in 0.031 seconds
+[0m23:06:22.503228 [debug] [Thread-1 (]: Using postgres connection "model.dbt_etl_test.brz_regioes"
+[0m23:06:22.504226 [debug] [Thread-1 (]: On model.dbt_etl_test.brz_regioes: /* {"app": "dbt", "dbt_version": "1.10.6", "profile_name": "dbt_etl_test", "target_name": "dev", "node_id": "model.dbt_etl_test.brz_regioes"} */
+alter table "dbt_test"."public_bronze"."brz_regioes__dbt_tmp" rename to "brz_regioes"
+[0m23:06:22.524217 [debug] [Thread-1 (]: SQL status: ALTER TABLE in 0.020 seconds
+[0m23:06:22.527332 [debug] [Thread-1 (]: On model.dbt_etl_test.brz_regioes: COMMIT
+[0m23:06:22.528281 [debug] [Thread-1 (]: Using postgres connection "model.dbt_etl_test.brz_regioes"
+[0m23:06:22.529227 [debug] [Thread-1 (]: On model.dbt_etl_test.brz_regioes: COMMIT
+[0m23:06:22.604010 [debug] [Thread-1 (]: SQL status: COMMIT in 0.074 seconds
+[0m23:06:22.608154 [debug] [Thread-1 (]: Applying DROP to: "dbt_test"."public_bronze"."brz_regioes__dbt_backup"
+[0m23:06:22.609497 [debug] [Thread-1 (]: Using postgres connection "model.dbt_etl_test.brz_regioes"
+[0m23:06:22.609497 [debug] [Thread-1 (]: On model.dbt_etl_test.brz_regioes: /* {"app": "dbt", "dbt_version": "1.10.6", "profile_name": "dbt_etl_test", "target_name": "dev", "node_id": "model.dbt_etl_test.brz_regioes"} */
+drop table if exists "dbt_test"."public_bronze"."brz_regioes__dbt_backup" cascade
+[0m23:06:22.632729 [debug] [Thread-1 (]: SQL status: DROP TABLE in 0.023 seconds
+[0m23:06:22.635807 [debug] [Thread-1 (]: On model.dbt_etl_test.brz_regioes: Close
+[0m23:06:22.635807 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '5c08ce8c-5c39-42ee-a0e2-e9db76701494', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000122B5C1C560>]}
+[0m23:06:22.636811 [info ] [Thread-1 (]: 9 of 13 OK created sql table model public_bronze.brz_regioes ................... [[32mSELECT 269[0m in 0.45s]
+[0m23:06:22.637867 [debug] [Thread-1 (]: Finished running node model.dbt_etl_test.brz_regioes
+[0m23:06:22.638707 [debug] [Thread-1 (]: Began running node model.dbt_etl_test.brz_vendas
+[0m23:06:22.639105 [info ] [Thread-1 (]: 10 of 13 START sql table model public_bronze.brz_vendas ........................ [RUN]
+[0m23:06:22.639892 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.dbt_etl_test.brz_regioes, now model.dbt_etl_test.brz_vendas)
+[0m23:06:22.639892 [debug] [Thread-1 (]: Began compiling node model.dbt_etl_test.brz_vendas
+[0m23:06:22.642158 [debug] [Thread-1 (]: Writing injected SQL for node "model.dbt_etl_test.brz_vendas"
+[0m23:06:22.643242 [debug] [Thread-1 (]: Began executing node model.dbt_etl_test.brz_vendas
+[0m23:06:22.645354 [debug] [Thread-1 (]: Writing runtime sql for node "model.dbt_etl_test.brz_vendas"
+[0m23:06:22.646298 [debug] [Thread-1 (]: Using postgres connection "model.dbt_etl_test.brz_vendas"
+[0m23:06:22.646298 [debug] [Thread-1 (]: On model.dbt_etl_test.brz_vendas: BEGIN
+[0m23:06:22.646298 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m23:06:22.761817 [debug] [Thread-1 (]: SQL status: BEGIN in 0.115 seconds
+[0m23:06:22.762938 [debug] [Thread-1 (]: Using postgres connection "model.dbt_etl_test.brz_vendas"
+[0m23:06:22.763937 [debug] [Thread-1 (]: On model.dbt_etl_test.brz_vendas: /* {"app": "dbt", "dbt_version": "1.10.6", "profile_name": "dbt_etl_test", "target_name": "dev", "node_id": "model.dbt_etl_test.brz_vendas"} */
+
+  
+    
+
+  create  table "dbt_test"."public_bronze"."brz_vendas__dbt_tmp"
+  
+  
+    as
+  
+  (
+    -- models/bronze/brz_vendas.sql
+
+select * from "dbt_test"."public"."vendas"
+  );
+  
+[0m23:06:22.792973 [debug] [Thread-1 (]: SQL status: SELECT 249 in 0.028 seconds
+[0m23:06:22.796969 [debug] [Thread-1 (]: Using postgres connection "model.dbt_etl_test.brz_vendas"
+[0m23:06:22.797969 [debug] [Thread-1 (]: On model.dbt_etl_test.brz_vendas: /* {"app": "dbt", "dbt_version": "1.10.6", "profile_name": "dbt_etl_test", "target_name": "dev", "node_id": "model.dbt_etl_test.brz_vendas"} */
+alter table "dbt_test"."public_bronze"."brz_vendas" rename to "brz_vendas__dbt_backup"
+[0m23:06:22.814169 [debug] [Thread-1 (]: SQL status: ALTER TABLE in 0.016 seconds
+[0m23:06:22.818369 [debug] [Thread-1 (]: Using postgres connection "model.dbt_etl_test.brz_vendas"
+[0m23:06:22.818369 [debug] [Thread-1 (]: On model.dbt_etl_test.brz_vendas: /* {"app": "dbt", "dbt_version": "1.10.6", "profile_name": "dbt_etl_test", "target_name": "dev", "node_id": "model.dbt_etl_test.brz_vendas"} */
+alter table "dbt_test"."public_bronze"."brz_vendas__dbt_tmp" rename to "brz_vendas"
+[0m23:06:22.842351 [debug] [Thread-1 (]: SQL status: ALTER TABLE in 0.023 seconds
+[0m23:06:22.844300 [debug] [Thread-1 (]: On model.dbt_etl_test.brz_vendas: COMMIT
+[0m23:06:22.844300 [debug] [Thread-1 (]: Using postgres connection "model.dbt_etl_test.brz_vendas"
+[0m23:06:22.845306 [debug] [Thread-1 (]: On model.dbt_etl_test.brz_vendas: COMMIT
+[0m23:06:22.906149 [debug] [Thread-1 (]: SQL status: COMMIT in 0.060 seconds
+[0m23:06:22.906149 [debug] [Thread-1 (]: Applying DROP to: "dbt_test"."public_bronze"."brz_vendas__dbt_backup"
+[0m23:06:22.906149 [debug] [Thread-1 (]: Using postgres connection "model.dbt_etl_test.brz_vendas"
+[0m23:06:22.906149 [debug] [Thread-1 (]: On model.dbt_etl_test.brz_vendas: /* {"app": "dbt", "dbt_version": "1.10.6", "profile_name": "dbt_etl_test", "target_name": "dev", "node_id": "model.dbt_etl_test.brz_vendas"} */
+drop table if exists "dbt_test"."public_bronze"."brz_vendas__dbt_backup" cascade
+[0m23:06:22.938172 [debug] [Thread-1 (]: SQL status: DROP TABLE in 0.024 seconds
+[0m23:06:22.941444 [debug] [Thread-1 (]: On model.dbt_etl_test.brz_vendas: Close
+[0m23:06:22.943456 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '5c08ce8c-5c39-42ee-a0e2-e9db76701494', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000122B5B29E80>]}
+[0m23:06:22.943456 [info ] [Thread-1 (]: 10 of 13 OK created sql table model public_bronze.brz_vendas ................... [[32mSELECT 249[0m in 0.30s]
+[0m23:06:22.945467 [debug] [Thread-1 (]: Finished running node model.dbt_etl_test.brz_vendas
+[0m23:06:22.945467 [debug] [Thread-1 (]: Began running node model.dbt_etl_test.slv_produtos
+[0m23:06:22.947900 [info ] [Thread-1 (]: 11 of 13 START sql table model public_silver.slv_produtos ...................... [RUN]
+[0m23:06:22.947900 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.dbt_etl_test.brz_vendas, now model.dbt_etl_test.slv_produtos)
+[0m23:06:22.947900 [debug] [Thread-1 (]: Began compiling node model.dbt_etl_test.slv_produtos
+[0m23:06:22.950920 [debug] [Thread-1 (]: Writing injected SQL for node "model.dbt_etl_test.slv_produtos"
+[0m23:06:22.952925 [debug] [Thread-1 (]: Began executing node model.dbt_etl_test.slv_produtos
+[0m23:06:22.957425 [debug] [Thread-1 (]: Writing runtime sql for node "model.dbt_etl_test.slv_produtos"
+[0m23:06:22.958316 [debug] [Thread-1 (]: Using postgres connection "model.dbt_etl_test.slv_produtos"
+[0m23:06:22.958316 [debug] [Thread-1 (]: On model.dbt_etl_test.slv_produtos: BEGIN
+[0m23:06:22.958316 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m23:06:23.104961 [debug] [Thread-1 (]: SQL status: BEGIN in 0.151 seconds
+[0m23:06:23.104961 [debug] [Thread-1 (]: Using postgres connection "model.dbt_etl_test.slv_produtos"
+[0m23:06:23.111500 [debug] [Thread-1 (]: On model.dbt_etl_test.slv_produtos: /* {"app": "dbt", "dbt_version": "1.10.6", "profile_name": "dbt_etl_test", "target_name": "dev", "node_id": "model.dbt_etl_test.slv_produtos"} */
+
+  
+    
+
+  create  table "dbt_test"."public_silver"."slv_produtos__dbt_tmp"
+  
+  
+    as
+  
+  (
+    -- models/silver/slv_produtos.sql
+-- Não é necessário materializar como tabela, pois é uma view e já está configurado no dbt_project.yml
+ 
+select 
+    p.produto_id,
+    p.nome,
+    p.categoria,
+    p.preco,
+    f.empresa as fornecedor_nome
+from "dbt_test"."public_bronze"."brz_produtos" p
+left join "dbt_test"."public_bronze"."brz_fornecedores" f
+    on p.fornecedor_id = f.fornecedor_id
+  );
+  
+[0m23:06:23.137073 [debug] [Thread-1 (]: SQL status: SELECT 499 in 0.032 seconds
+[0m23:06:23.148014 [debug] [Thread-1 (]: Using postgres connection "model.dbt_etl_test.slv_produtos"
+[0m23:06:23.150022 [debug] [Thread-1 (]: On model.dbt_etl_test.slv_produtos: /* {"app": "dbt", "dbt_version": "1.10.6", "profile_name": "dbt_etl_test", "target_name": "dev", "node_id": "model.dbt_etl_test.slv_produtos"} */
+alter table "dbt_test"."public_silver"."slv_produtos" rename to "slv_produtos__dbt_backup"
+[0m23:06:23.169325 [debug] [Thread-1 (]: SQL status: ALTER TABLE in 0.020 seconds
+[0m23:06:23.175358 [debug] [Thread-1 (]: Using postgres connection "model.dbt_etl_test.slv_produtos"
+[0m23:06:23.175358 [debug] [Thread-1 (]: On model.dbt_etl_test.slv_produtos: /* {"app": "dbt", "dbt_version": "1.10.6", "profile_name": "dbt_etl_test", "target_name": "dev", "node_id": "model.dbt_etl_test.slv_produtos"} */
+alter table "dbt_test"."public_silver"."slv_produtos__dbt_tmp" rename to "slv_produtos"
+[0m23:06:23.185521 [debug] [Thread-1 (]: SQL status: ALTER TABLE in 0.015 seconds
+[0m23:06:23.192741 [debug] [Thread-1 (]: On model.dbt_etl_test.slv_produtos: COMMIT
+[0m23:06:23.194751 [debug] [Thread-1 (]: Using postgres connection "model.dbt_etl_test.slv_produtos"
+[0m23:06:23.194751 [debug] [Thread-1 (]: On model.dbt_etl_test.slv_produtos: COMMIT
+[0m23:06:23.217889 [debug] [Thread-1 (]: SQL status: COMMIT in 0.024 seconds
+[0m23:06:23.223495 [debug] [Thread-1 (]: Applying DROP to: "dbt_test"."public_silver"."slv_produtos__dbt_backup"
+[0m23:06:23.225507 [debug] [Thread-1 (]: Using postgres connection "model.dbt_etl_test.slv_produtos"
+[0m23:06:23.225507 [debug] [Thread-1 (]: On model.dbt_etl_test.slv_produtos: /* {"app": "dbt", "dbt_version": "1.10.6", "profile_name": "dbt_etl_test", "target_name": "dev", "node_id": "model.dbt_etl_test.slv_produtos"} */
+drop table if exists "dbt_test"."public_silver"."slv_produtos__dbt_backup" cascade
+[0m23:06:23.253904 [debug] [Thread-1 (]: SQL status: DROP TABLE in 0.027 seconds
+[0m23:06:23.255923 [debug] [Thread-1 (]: On model.dbt_etl_test.slv_produtos: Close
+[0m23:06:23.255923 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '5c08ce8c-5c39-42ee-a0e2-e9db76701494', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000122B5C375C0>]}
+[0m23:06:23.257934 [info ] [Thread-1 (]: 11 of 13 OK created sql table model public_silver.slv_produtos ................. [[32mSELECT 499[0m in 0.31s]
+[0m23:06:23.257934 [debug] [Thread-1 (]: Finished running node model.dbt_etl_test.slv_produtos
+[0m23:06:23.259943 [debug] [Thread-1 (]: Began running node model.dbt_etl_test.slv_vendas
+[0m23:06:23.259943 [info ] [Thread-1 (]: 12 of 13 START sql table model public_silver.slv_vendas ........................ [RUN]
+[0m23:06:23.259943 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.dbt_etl_test.slv_produtos, now model.dbt_etl_test.slv_vendas)
+[0m23:06:23.261448 [debug] [Thread-1 (]: Began compiling node model.dbt_etl_test.slv_vendas
+[0m23:06:23.263452 [debug] [Thread-1 (]: Writing injected SQL for node "model.dbt_etl_test.slv_vendas"
+[0m23:06:23.263452 [debug] [Thread-1 (]: Began executing node model.dbt_etl_test.slv_vendas
+[0m23:06:23.268334 [debug] [Thread-1 (]: Writing runtime sql for node "model.dbt_etl_test.slv_vendas"
+[0m23:06:23.269336 [debug] [Thread-1 (]: Using postgres connection "model.dbt_etl_test.slv_vendas"
+[0m23:06:23.270371 [debug] [Thread-1 (]: On model.dbt_etl_test.slv_vendas: BEGIN
+[0m23:06:23.270371 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m23:06:23.423277 [debug] [Thread-1 (]: SQL status: BEGIN in 0.152 seconds
+[0m23:06:23.423277 [debug] [Thread-1 (]: Using postgres connection "model.dbt_etl_test.slv_vendas"
+[0m23:06:23.423277 [debug] [Thread-1 (]: On model.dbt_etl_test.slv_vendas: /* {"app": "dbt", "dbt_version": "1.10.6", "profile_name": "dbt_etl_test", "target_name": "dev", "node_id": "model.dbt_etl_test.slv_vendas"} */
+
+  
+    
+
+  create  table "dbt_test"."public_silver"."slv_vendas__dbt_tmp"
+  
+  
+    as
+  
+  (
+    -- models/silver/slv_vendas.sql
+-- Não é necessário materializar como tabela, pois é uma view e já está configurado no dbt_project.yml
+
+
+select 
+    v.venda_id,
+    v.data_venda,
+    v.quantidade,
+    v.produto_id,
+    v.cliente_id,
+    v.regiao_id,
+    c.nome as cliente_nome,
+    r.uf,
+    r.cidade as cidade_regiao,
+    p.nome as nome_produto,
+    p.preco,
+    (v.quantidade * p.preco) as total_venda
+from "dbt_test"."public_bronze"."brz_vendas" v
+left join "dbt_test"."public_bronze"."brz_clientes" c on v.cliente_id = c.cliente_id
+left join "dbt_test"."public_bronze"."brz_regioes" r on v.regiao_id = r.regiao_id
+left join "dbt_test"."public_bronze"."brz_produtos" p on v.produto_id = p.produto_id
+  );
+  
+[0m23:06:23.440551 [debug] [Thread-1 (]: SQL status: SELECT 249 in 0.023 seconds
+[0m23:06:23.451351 [debug] [Thread-1 (]: Using postgres connection "model.dbt_etl_test.slv_vendas"
+[0m23:06:23.451351 [debug] [Thread-1 (]: On model.dbt_etl_test.slv_vendas: /* {"app": "dbt", "dbt_version": "1.10.6", "profile_name": "dbt_etl_test", "target_name": "dev", "node_id": "model.dbt_etl_test.slv_vendas"} */
+alter table "dbt_test"."public_silver"."slv_vendas" rename to "slv_vendas__dbt_backup"
+[0m23:06:23.457398 [debug] [Thread-1 (]: SQL status: ALTER TABLE in 0.006 seconds
+[0m23:06:23.460589 [debug] [Thread-1 (]: Using postgres connection "model.dbt_etl_test.slv_vendas"
+[0m23:06:23.461595 [debug] [Thread-1 (]: On model.dbt_etl_test.slv_vendas: /* {"app": "dbt", "dbt_version": "1.10.6", "profile_name": "dbt_etl_test", "target_name": "dev", "node_id": "model.dbt_etl_test.slv_vendas"} */
+alter table "dbt_test"."public_silver"."slv_vendas__dbt_tmp" rename to "slv_vendas"
+[0m23:06:23.461595 [debug] [Thread-1 (]: SQL status: ALTER TABLE in 0.005 seconds
+[0m23:06:23.461595 [debug] [Thread-1 (]: On model.dbt_etl_test.slv_vendas: COMMIT
+[0m23:06:23.469279 [debug] [Thread-1 (]: Using postgres connection "model.dbt_etl_test.slv_vendas"
+[0m23:06:23.469279 [debug] [Thread-1 (]: On model.dbt_etl_test.slv_vendas: COMMIT
+[0m23:06:23.473522 [debug] [Thread-1 (]: SQL status: COMMIT in 0.009 seconds
+[0m23:06:23.480504 [debug] [Thread-1 (]: Applying DROP to: "dbt_test"."public_silver"."slv_vendas__dbt_backup"
+[0m23:06:23.480504 [debug] [Thread-1 (]: Using postgres connection "model.dbt_etl_test.slv_vendas"
+[0m23:06:23.480504 [debug] [Thread-1 (]: On model.dbt_etl_test.slv_vendas: /* {"app": "dbt", "dbt_version": "1.10.6", "profile_name": "dbt_etl_test", "target_name": "dev", "node_id": "model.dbt_etl_test.slv_vendas"} */
+drop table if exists "dbt_test"."public_silver"."slv_vendas__dbt_backup" cascade
+[0m23:06:23.490604 [debug] [Thread-1 (]: SQL status: DROP TABLE in 0.009 seconds
+[0m23:06:23.490604 [debug] [Thread-1 (]: On model.dbt_etl_test.slv_vendas: Close
+[0m23:06:23.490604 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '5c08ce8c-5c39-42ee-a0e2-e9db76701494', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000122B53490A0>]}
+[0m23:06:23.490604 [info ] [Thread-1 (]: 12 of 13 OK created sql table model public_silver.slv_vendas ................... [[32mSELECT 249[0m in 0.23s]
+[0m23:06:23.490604 [debug] [Thread-1 (]: Finished running node model.dbt_etl_test.slv_vendas
+[0m23:06:23.490604 [debug] [Thread-1 (]: Began running node model.dbt_etl_test.gld_fato_vendas
+[0m23:06:23.490604 [info ] [Thread-1 (]: 13 of 13 START sql table model public_gold.gld_fato_vendas ..................... [RUN]
+[0m23:06:23.490604 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.dbt_etl_test.slv_vendas, now model.dbt_etl_test.gld_fato_vendas)
+[0m23:06:23.490604 [debug] [Thread-1 (]: Began compiling node model.dbt_etl_test.gld_fato_vendas
+[0m23:06:23.490604 [debug] [Thread-1 (]: Writing injected SQL for node "model.dbt_etl_test.gld_fato_vendas"
+[0m23:06:23.490604 [debug] [Thread-1 (]: Began executing node model.dbt_etl_test.gld_fato_vendas
+[0m23:06:23.490604 [debug] [Thread-1 (]: Writing runtime sql for node "model.dbt_etl_test.gld_fato_vendas"
+[0m23:06:23.490604 [debug] [Thread-1 (]: Using postgres connection "model.dbt_etl_test.gld_fato_vendas"
+[0m23:06:23.490604 [debug] [Thread-1 (]: On model.dbt_etl_test.gld_fato_vendas: BEGIN
+[0m23:06:23.490604 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m23:06:23.563769 [debug] [Thread-1 (]: SQL status: BEGIN in 0.064 seconds
+[0m23:06:23.563769 [debug] [Thread-1 (]: Using postgres connection "model.dbt_etl_test.gld_fato_vendas"
+[0m23:06:23.563769 [debug] [Thread-1 (]: On model.dbt_etl_test.gld_fato_vendas: /* {"app": "dbt", "dbt_version": "1.10.6", "profile_name": "dbt_etl_test", "target_name": "dev", "node_id": "model.dbt_etl_test.gld_fato_vendas"} */
+
+  
+    
+
+  create  table "dbt_test"."public_gold"."gld_fato_vendas__dbt_tmp"
+  
+  
+    as
+  
+  (
+    -- models/gold/gld_fato_vendas.sql
+
+select 
+    extract(year from data_venda) as ano,
+    uf,
+    nome_produto,
+    sum(quantidade) as total_itens,
+    sum(total_venda) as receita_total
+from "dbt_test"."public_silver"."slv_vendas"
+group by 1, 2, 3
+order by ano, receita_total desc
+  );
+  
+[0m23:06:23.573565 [debug] [Thread-1 (]: SQL status: SELECT 248 in 0.017 seconds
+[0m23:06:23.590537 [debug] [Thread-1 (]: Using postgres connection "model.dbt_etl_test.gld_fato_vendas"
+[0m23:06:23.590537 [debug] [Thread-1 (]: On model.dbt_etl_test.gld_fato_vendas: /* {"app": "dbt", "dbt_version": "1.10.6", "profile_name": "dbt_etl_test", "target_name": "dev", "node_id": "model.dbt_etl_test.gld_fato_vendas"} */
+alter table "dbt_test"."public_gold"."gld_fato_vendas" rename to "gld_fato_vendas__dbt_backup"
+[0m23:06:23.590537 [debug] [Thread-1 (]: SQL status: ALTER TABLE in 0.008 seconds
+[0m23:06:23.606689 [debug] [Thread-1 (]: Using postgres connection "model.dbt_etl_test.gld_fato_vendas"
+[0m23:06:23.606689 [debug] [Thread-1 (]: On model.dbt_etl_test.gld_fato_vendas: /* {"app": "dbt", "dbt_version": "1.10.6", "profile_name": "dbt_etl_test", "target_name": "dev", "node_id": "model.dbt_etl_test.gld_fato_vendas"} */
+alter table "dbt_test"."public_gold"."gld_fato_vendas__dbt_tmp" rename to "gld_fato_vendas"
+[0m23:06:23.606689 [debug] [Thread-1 (]: SQL status: ALTER TABLE in 0.006 seconds
+[0m23:06:23.606689 [debug] [Thread-1 (]: On model.dbt_etl_test.gld_fato_vendas: COMMIT
+[0m23:06:23.606689 [debug] [Thread-1 (]: Using postgres connection "model.dbt_etl_test.gld_fato_vendas"
+[0m23:06:23.606689 [debug] [Thread-1 (]: On model.dbt_etl_test.gld_fato_vendas: COMMIT
+[0m23:06:23.623590 [debug] [Thread-1 (]: SQL status: COMMIT in 0.007 seconds
+[0m23:06:23.625600 [debug] [Thread-1 (]: Applying DROP to: "dbt_test"."public_gold"."gld_fato_vendas__dbt_backup"
+[0m23:06:23.625600 [debug] [Thread-1 (]: Using postgres connection "model.dbt_etl_test.gld_fato_vendas"
+[0m23:06:23.625600 [debug] [Thread-1 (]: On model.dbt_etl_test.gld_fato_vendas: /* {"app": "dbt", "dbt_version": "1.10.6", "profile_name": "dbt_etl_test", "target_name": "dev", "node_id": "model.dbt_etl_test.gld_fato_vendas"} */
+drop table if exists "dbt_test"."public_gold"."gld_fato_vendas__dbt_backup" cascade
+[0m23:06:23.642865 [debug] [Thread-1 (]: SQL status: DROP TABLE in 0.017 seconds
+[0m23:06:23.646596 [debug] [Thread-1 (]: On model.dbt_etl_test.gld_fato_vendas: Close
+[0m23:06:23.646596 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '5c08ce8c-5c39-42ee-a0e2-e9db76701494', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000122B5A56A20>]}
+[0m23:06:23.646596 [info ] [Thread-1 (]: 13 of 13 OK created sql table model public_gold.gld_fato_vendas ................ [[32mSELECT 248[0m in 0.16s]
+[0m23:06:23.646596 [debug] [Thread-1 (]: Finished running node model.dbt_etl_test.gld_fato_vendas
+[0m23:06:23.646596 [debug] [MainThread]: Using postgres connection "master"
+[0m23:06:23.646596 [debug] [MainThread]: On master: BEGIN
+[0m23:06:23.646596 [debug] [MainThread]: Opening a new connection, currently in state closed
+[0m23:06:23.689613 [debug] [MainThread]: SQL status: BEGIN in 0.039 seconds
+[0m23:06:23.690631 [debug] [MainThread]: On master: COMMIT
+[0m23:06:23.690631 [debug] [MainThread]: Using postgres connection "master"
+[0m23:06:23.692040 [debug] [MainThread]: On master: COMMIT
+[0m23:06:23.692040 [debug] [MainThread]: SQL status: COMMIT in 0.009 seconds
+[0m23:06:23.692040 [debug] [MainThread]: On master: Close
+[0m23:06:23.692040 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m23:06:23.703080 [debug] [MainThread]: Connection 'list_dbt_test' was properly closed.
+[0m23:06:23.703080 [debug] [MainThread]: Connection 'list_dbt_test_public_gold' was properly closed.
+[0m23:06:23.703080 [debug] [MainThread]: Connection 'model.dbt_etl_test.gld_fato_vendas' was properly closed.
+[0m23:06:23.703080 [info ] [MainThread]: 
+[0m23:06:23.705088 [info ] [MainThread]: Finished running 13 table models in 0 hours 0 minutes and 8.11 seconds (8.11s).
+[0m23:06:23.706957 [debug] [MainThread]: Command end result
+[0m23:06:23.725465 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\conta\OneDrive\Desktop\Modelo DBT\DBT Test\target\manifest.json
+[0m23:06:23.727467 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\conta\OneDrive\Desktop\Modelo DBT\DBT Test\target\semantic_manifest.json
+[0m23:06:23.731615 [debug] [MainThread]: Wrote artifact RunExecutionResult to C:\Users\conta\OneDrive\Desktop\Modelo DBT\DBT Test\target\run_results.json
+[0m23:06:23.731615 [info ] [MainThread]: 
+[0m23:06:23.731615 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m23:06:23.734043 [info ] [MainThread]: 
+[0m23:06:23.734450 [info ] [MainThread]: Done. PASS=13 WARN=0 ERROR=0 SKIP=0 NO-OP=0 TOTAL=13
+[0m23:06:23.735082 [debug] [MainThread]: Command `dbt run` succeeded at 23:06:23.735082 after 8.99 seconds
+[0m23:06:23.735082 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000122B3E61B80>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000122B36385C0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000122B5B43380>]}
+[0m23:06:23.735082 [debug] [MainThread]: Flushing usage events
+[0m23:06:24.723621 [debug] [MainThread]: An error was encountered while trying to flush usage events

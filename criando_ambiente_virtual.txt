@@ -1,6 +1,3 @@
-* Diretório do projeto
-cd C:\Users\conta\OneDrive\Desktop\Modelo DBT\DBT Clientes
-
 * Primeiro instale o virtualenv caso não tenha instalado
 $ pip install virtualenv
 
