@@ -3,7 +3,8 @@
 Este projeto utiliza o [dbt (data build tool)](https://www.getdbt.com/) para criar uma arquitetura de dados modelada em camadas (staging, intermediária e final) com base em arquivos CSV.
 
 [![Python](https://img.shields.io/badge/Python-3.10%2B-blue.svg)](https://www.python.org/)
-[![License](https://img.shields.io/badge/license-MIT-green.svg)]([https://github.com/tvlemes/APP-ETL-Basico-com-IA/blob/main/LICENSE](https://github.com/tvlemes/projeto-estudo-dbt/blob/main/LICENSE))
+[![License](https://img.shields.io/badge/license-MIT-green.svg)](https://github.com/tvlemes/projeto-estudo-dbt/blob/main/LICENSE)
+
 ---
 ## 📁 Estrutura do Projeto
 
